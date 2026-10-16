@@ -1,0 +1,10 @@
+<div class="container section">
+    <ol class="roadmap">
+        {% for step in section.steps %}
+            <li>
+                {% if step.title %}<h3 class='box-title'>{{ step.title }}</h3>{% endif %}
+                {{ step.text|raw}}
+            </li>
+        {% endfor %}
+    </ol>
+</div>

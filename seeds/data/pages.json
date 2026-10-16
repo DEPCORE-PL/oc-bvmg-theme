@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "slug": "home",
+    "content_group": "builder",
+    "is_enabled": 1,
+    "builder": [
+      {
+        "content_group": "hero",
+        "title": "Home hero",
+        "variant": "video",
+        "video": "assets/video/hero.mp4",
+        "slider_content": "<p>BUDUJ RELACJE <strong>ROZWIJAJ BIZNES</strong></p><p>KREUJ WIZERUNEK <strong>ZDOBYWAJ ROZPOZNAWALNOŚĆ</strong></p><p>PLANUJ STRATEGICZNIE <strong>DZIAŁAJ KOMPLEKSOWO</strong></p>",
+        "placement": "page_hero"
+      },
+      {
+        "content_group": "section",
+        "title": "Introduction",
+        "style": "home_intro",
+        "content": "<h3 style=\"text-align: center;\" class=\"page-title\">DOBRZE CIĘ WIDZIEĆ. <strong>A JAK WIDZĄ CIĘ INNI?</strong></h3>\n<h3 class=\"home-kicker\" style=\"text-align: center;\"><strong>Pokaż się światu z Buena Vista Media Group</strong></h3>\n<h1 class=\"home-main-title\" style=\"text-align: center;\"><strong>Agencją PR z Wrocławia!</strong></h1>\n<p style=\"text-align: center;\">Jako wrocławska <strong>agencja PR</strong> projektujemy i realizujemy nowoczesną komunikację, która buduje trwałe relacje z otoczeniem.</p>\n<p style=\"text-align: center;\">Jesteśmy doświadczonym partnerem dla firm poszukujących profesjonalnego wsparcia w obszarze <strong>public relations</strong>.</p>\n<h3 class=\"home-services-heading\" style=\"text-align: center;\"><a href=\"/kompetencje\"><strong>Oferujemy kompleksowe usługi PR:</strong></a></h3>\n<ul class=\"home-services-list\">\n<li><h4><strong><a href=\"/usluga/media-relations\">Media relations</a></strong></h4>Budujemy relacje z dziennikarzami, przygotowujemy komunikaty prasowe i zapewniamy widoczność Twojej marki w mediach.</li>\n<li><h4><strong><a href=\"/usluga/employer-branding\">Employer branding</a></strong></h4>Pomagamy w tworzeniu wizerunku pracodawcy, który przyciąga talenty i zwiększa zaangażowanie zespołu: tworzymy komunikację wewnętrzną, realizujemy filmy i sesje zdjęciowe, projektujemy oznakowanie przestrzeni oraz materiały wspierające kulturę organizacyjną firmy.</li>\n<li><h4><strong><a href=\"/usluga/komunikacja-kryzysowa\">Komunikacja kryzysowa</a></strong></h4>Wspieramy firmy w sytuacjach trudnych, minimalizując ryzyko wizerunkowe i dbając o spójny przekaz.</li>\n<li><h4><strong><a href=\"/usluga/social-media-marketing\">Social media marketing</a></strong></h4>Prowadzimy profile w mediach społecznościowych, tworzymy kreatywne treści i realizujemy kampanie, które budują rozpoznawalność marki oraz zaangażowanie odbiorców.</li>\n<li><h4><strong><a href=\"/usluga/influencer-marketing\">Influencer marketing</a></strong></h4>Nawiązujemy współprace z twórcami internetowymi, pomagając marce dotrzeć do nowych grup odbiorców, zwiększać zasięg oraz wiarygodność.</li>\n<li><h4><strong><a href=\"/usluga/event-marketing\">Event marketing</a></strong></h4>Kompleksowo organizujemy wydarzenia, takie jak otwarcia, jubileusze, konferencje prasowe czy eventy integracyjne, tworząc doświadczenia, które budują relacje i wzmacniają markę.</li>\n<li><h4><strong><a href=\"/usluga/dtp\">DTP / Projekty graficzne i produkcja materiałów promocyjnych</a></strong></h4>Realizujemy nieszablonowe materiały drukowane i cyfrowe, spójne z identyfikacją wizualną marki, w tym materiały konferencyjne i reklamowe, prezentacje, plakaty, raporty, infografiki, materiały POS czy oznakowanie.</li>\n<li><h4><strong><a href=\"/usluga/dzialania-csr\">Strategie CSR i ESG</a></strong></h4>Wspieramy firmy w komunikacji działań z zakresu społecznej odpowiedzialności biznesu i zrównoważonego rozwoju: przygotowujemy materiały, prowadzimy komunikację z interesariuszami i pomagamy budować wiarygodny wizerunek marki.</li>\n<li><h4><strong><a href=\"/usluga/projektowanie-i-budowa-stron-www\">Projektowanie stron internetowych</a></strong></h4>Tworzymy nowoczesne, funkcjonalne i responsywne strony internetowe, które wspierają realizację celów biznesowych i wzmacniają wizerunek marki.</li>\n</ul>\n<p class=\"home-industries\" style=\"text-align: center;\">Realizujemy działania <strong>PR dla branż</strong>:<br><strong>budowlanej, nieruchomościowej, wnętrzarskiej, przemysłowej, retail, lifestyle, IT, turystycznej, FMCG</strong>.</p>\n<p style=\"text-align: center;\"><strong>Jeśli szukasz agencji PR pełnej pasji i energii – jesteś we właściwym miejscu!</strong></p>\n<p style=\"text-align: center;\"><a href=\"/kontakt\"><strong><u>Skontaktuj się z nami</u></strong></a> i zacznijmy działać.</p>"
+      },
+      {
+        "content_group": "hero",
+        "title": "About video",
+        "variant": "video",
+        "video": "assets/video/about.mp4",
+        "section_mode": 1,
+        "placement": "inline"
+      },
+      {
+        "content_group": "services_list",
+        "title": "Services",
+        "heading": "Kompetencje",
+        "content": "<p>Nowoczesna komunikacja ma wiele twarzy. Sprawdź, które z nich znamy najlepiej.</p>"
+      },
+      {
+        "content_group": "portfolio_section",
+        "title": "Portfolio",
+        "separator": 1
+      },
+      {
+        "content_group": "client_logos",
+        "title": "Clients",
+        "content": "<h2 style=\"text-align: center;\" class=\"page-title\">Klienci</h2><p>Dzięki nim możemy realizować wyjątkowe projekty. Dziękujemy za zaufanie!</p>"
+      },
+      {
+        "content_group": "testimonials",
+        "title": "Testimonials",
+        "wrapper": "testimonials"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "O nas",
+    "slug": "o-nas",
+    "content_group": "builder",
+    "is_enabled": 1,
+    "builder": [
+      {
+        "content_group": "hero",
+        "title": "About hero",
+        "variant": "parallax",
+        "heading": "POZNAJMY SIĘ!",
+        "theme_image": "assets/images/kariera.webp",
+        "placement": "page_hero"
+      },
+      {
+        "content_group": "values",
+        "title": "Our values",
+        "intro": "<p style=\"text-align: center;\"><span style=\"font-size: 36px;\"><strong>Filozofia naszej pracy opiera się na 3 założeniach:</strong></span></p>",
+        "items": [
+          {
+            "icon": "elastic",
+            "content": "<h4>Elastycznie</h4><p>Jesteśmy partnerem, na którego zawsze można liczyć. Niezależnie od dynamiki zmian pomagamy kierować skuteczną komunikacją.</p>"
+          },
+          {
+            "icon": "close-icon",
+            "content": "<h4>Blisko</h4><p>Stawiamy na pełne zaangażowanie w każdy projekt i bliską współpracę opartą na wzajemnym inspirowaniu się i zaufaniu.</p>"
+          },
+          {
+            "icon": "full360",
+            "content": "<h4>Kompleksowo</h4><p>Korzystamy z szerokiej palety narzędzi komunikacyjnych, odpowiednio dopasowując je do indywidualnych potrzeb.</p>"
+          }
+        ]
+      },
+      {
+        "content_group": "section",
+        "title": "About BVMG",
+        "style": "default",
+        "content": "<p style=\"text-align: justify;\">Wierzymy, że skuteczna <strong>komunikacja&nbsp;</strong>to coś więcej niż obecność w mediach. To umiejętność budowania trwałych relacji, wzmacniania wizerunku i tworzenia historii, które angażują odbiorców. Od lat wspieramy firmy w realizacji celów biznesowych, projektując strategie komunikacyjne dopasowane do ich potrzeb, rynku i grup docelowych.</p><p style=\"text-align: justify;\">Jako <strong>agencja PR</strong> specjalizujemy się w działaniach z zakresu <strong>public relations</strong>, łącząc doświadczenie z kreatywnym podejściem i znajomością współczesnych narzędzi komunikacji. Tworzymy rozwiązania, które pomagają markom zwiększać rozpoznawalność, budować wiarygodność oraz rozwijać wartościowe relacje z klientami, partnerami biznesowymi i mediami.</p><p style=\"text-align: justify;\">Nasze kompetencje obejmują między innymi <strong>media relations</strong>, <strong>CSR i ESG</strong>, <strong>social media marketing</strong>, <strong>employer branding</strong>, <strong>komunikację kryzysową</strong>, <strong>influencer marketing</strong>, <strong>event marketing</strong> oraz <strong>DTP/Projektowanie graficzne i produkcję materiałów promocyjnych.</strong> Uzupełnieniem oferty są sesje fotograficzne, produkcja materiałów wideo oraz tworzenie nowoczesnych stron internetowych. Dzięki kompleksowemu podejściu zapewniamy spójną komunikację we wszystkich punktach styku marki z odbiorcami.</p><p style=\"text-align: justify;\">Każdy projekt rozpoczynamy od poznania specyfiki działalności klienta i jego celów. Nie korzystamy z gotowych schematów – opracowujemy rozwiązania dopasowane do branży, skali działalności oraz wyzwań komunikacyjnych. Łączymy strategiczne myślenie z elastycznością, dzięki czemu potrafimy skutecznie reagować na zmieniające się potrzeby rynku.</p><p style=\"text-align: justify;\">Nasze doświadczenie obejmuje wiele obszarów – od<strong>&nbsp;budownictwa i architektury, przez FMCG i kulinaria, handel i usługi, IT, konferencje i wydarzenia, motoryzację, prawo i finanse, aż po przemysł i wnętrza.</strong> Tworzymy skuteczne działania komunikacyjne zarówno dla rozpoznawalnych marek, jak i firm rozwijających swoją pozycję na rynku.</p><p style=\"text-align: justify;\">Stawiamy na partnerską współpracę, otwartą komunikację i zaangażowanie na każdym etapie realizacji projektu. Poznajemy potrzeby naszych klientów i wspólnie wypracowujemy rozwiązania dopasowane do ich celów biznesowych. Zależy nam nie tylko na sprawnej realizacji projektów, ale przede wszystkim na budowaniu długofalowych relacji, które wspierają rozwój biznesu, wzmacniają markę i otwierają przestrzeń do kolejnych wspólnych działań.</p><p style=\"text-align: justify;\"><br></p><p style=\"text-align: center;\">Jeśli szukasz partnera, który pomoże skutecznie budować wizerunek Twojej marki&nbsp;</p><p style=\"text-align: center;\">i zadba o profesjonalną komunikację, jesteś we właściwym miejscu.</p><p style=\"text-align: center;\"><a href=\"https://www.bvmg.pl/kontakt\" rel=\"noopener noreferrer\" target=\"_blank\"><strong><u>Skontaktuj się</u></strong></a> z nami, sprawdźmy, jak możemy wspólnie osiągnąć Twoje cele!</p><p style=\"text-align: center;\"><br></p><p style=\"text-align: justify;\"><br></p>",
+        "css_classes": [
+          "about-copy"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Kontakt",
+    "slug": "kontakt",
+    "content_group": "builder",
+    "is_enabled": 1,
+    "builder": [
+      {
+        "content_group": "hero",
+        "title": "Contact hero",
+        "variant": "title",
+        "heading": "Kontakt",
+        "placement": "page_hero"
+      },
+      {
+        "content_group": "section",
+        "title": "Contact details",
+        "style": "contact",
+        "content": "<p style=\"text-align: center;\">Buena Vista Media Group</p>\n<p style=\"text-align: center;\">ul. Laskowicka 7<br>51-523 Wrocław</p>\n<p style=\"text-align: center;\"><a href=\"mailto:info@bvmg.pl\">info@bvmg.pl</a></p>\n<p style=\"text-align: center;\"><strong>Biuro:</strong></p>\n<p style=\"text-align: center;\">Concordia Design<br>Wyspa Słodowa 7 lok. 306<br>50-266 Wrocław</p>\n<p style=\"text-align: center;\">+ 48 535 359 554<br>+ 48 535 359 889</p>\n<p style=\"text-align: center;\"><strong>Zapytania i wyceny:</strong></p>\n<p style=\"text-align: center;\">+ 48 505 933 916<br>+ 48 667 740 910</p>\n<p style=\"text-align: center;\"><strong>Kontakt dla mediów:</strong></p>\n<p style=\"text-align: center;\">+ 48 728 437 715<br>+ 48 690 427 448</p>"
+      },
+      {
+        "content_group": "section",
+        "title": "Registration details",
+        "heading": "Dane rejestrowe",
+        "style": "registration",
+        "content": "<h2 style=\"text-align: center;\">Buena Vista Media Group sp. z o.o. sp. k.</h2><p style=\"text-align: center;\">ul. Laskowicka 7,<br>51-523 Wrocław,<br>NIP: 8952178057</p><p style=\"text-align: center;\">REGON: 369258190<br>Sąd Rejonowy dla Wrocławia-Fabrycznej,<br>VI Wydział Gospodarczy<br>KRS: 0000729669</p>"
+      },
+      {
+        "content_group": "contact_form",
+        "title": "Contact form",
+        "heading": "Napisz do nas",
+        "content": "<p>Jesteśmy do Twojej dyspozycji. Zapraszamy do naszego biura na miłe spotkanie przy pysznej kawie :-) Możesz też skontaktować się z nami mailowo, telefonicznie lub przez formularz.</p>"
+      },
+      {
+        "content_group": "map",
+        "title": "Map"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Kompetencje",
+    "slug": "kompetencje",
+    "content_group": "builder",
+    "is_enabled": 1,
+    "builder": [
+      {
+        "content_group": "hero",
+        "title": "Services hero",
+        "variant": "title",
+        "heading": "kompetencje",
+        "placement": "page_hero"
+      },
+      {
+        "content_group": "services_list",
+        "title": "Services",
+        "content": "<p>Nowoczesna komunikacja ma wiele twarzy. Sprawdź, które z nich znamy najlepiej.</p>"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Kariera",
+    "slug": "kariera",
+    "content_group": "builder",
+    "is_enabled": 1,
+    "builder": [
+      {
+        "content_group": "hero",
+        "title": "Career hero",
+        "variant": "parallax",
+        "heading": "NASZA SIŁA TO ZESPÓŁ.  CHCESZ DO NIEGO DOŁĄCZYĆ?",
+        "theme_image": "assets/images/kariera.webp",
+        "placement": "page_hero"
+      },
+      {
+        "content_group": "section",
+        "title": "Career introduction",
+        "content": "<p style=\"text-align: center;\">Planujesz rozwinąć skrzydła w branży PR &amp; Marketing?\n\t\t<br/>Jesteś osobą kreatywną, lubisz wyzwania i umiesz przelewać swoje myśli na papier?\n\t\t<br/>Media społecznościowe to Twoje naturalne środowisko?\n\t\t<br/>A może kręci Cię organizacja eventów?</p>\n<p style=\"text-align: center;\"><strong>Jeżeli na przynajmniej dwa z powyższych pytań możesz odpowiedzieć twierdząco,<br/>jesteś na najlepszej drodze, by dołączyć do naszego zespołu!</strong></p>\n<p style=\"text-align: center;\">Jeśli poniżej nie widzisz żadnej oferty, najprawdopodobniej w tym momencie nie prowadzimy procesu rekrutacji do naszego zespołu. Niech Cię to jednak nie zniechęca. Wyślij nam swoje CV i napisz, dlaczego współpraca z nami jest dla Ciebie interesująca, a dołączymy Twoje zgłoszenie do naszej bazy i weźmiemy je pod uwagę przy okazji następnej rekrutacji. </p>\n<p style=\"text-align: center;\">Korespondencję prosimy wysyłać na adres:<strong> </strong><a href=\"mailto:rekrutacja@bvmg.pl\">rekrutacja@bvmg.pl</a>. Pamiętaj przy tym o dołączeniu odpowiedniej klauzuli, o której informację znajdziesz poniżej.</p>",
+        "style": "career_text"
+      },
+      {
+        "content_group": "section",
+        "title": "Creative copywriter",
+        "content": "<h3 class=\"page-title\" style=\"text-align: center;\"><strong>KREATYWNY COPYWRITER</strong></h3>\n<p style=\"text-align: center;\">Preferowana lokalizacja: <strong>Wrocław</strong></p>\n<p style=\"text-align: center;\">SZUKAMY OSOBY, KTÓRA POSIADA:</p>\n<ul>\n<li>minimum <strong>2-3 letnie doświadczenie w branży PR</strong> (min. w pisaniu materiałów prasowych, briefów działań komunikacyjnych - w tym dla grafików, linii lektorskich, przemówień, prezentacji),</li>\n<li>twórcze spojrzenie na tekst,</li>\n<li>umiejętność korekty tekstów,</li>\n<li>znajomość podstawowych programów i/lub narzędzi graficznych (np. Canva) – mile widziana.</li>\n</ul>\n<p style=\"text-align: center;\"><u>Zależy nam na zapoznaniu się z portfolio tworzonych dotychczas tekstów.</u></p>\n<p style=\"text-align: center;\">Jesteśmy elastyczni w temacie formy współpracy (tj. B2B, umowa, inna – w zależności od ustaleń).</p>\n<p style=\"text-align: center;\">Jeśli zainteresowała Cię powyższa oferta, nie czekaj – wyślij swoje CV na adres: <a href=\"mailto:rekrutacja@bvmg.pl\">rekrutacja@bvmg.pl</a>. Pamiętaj przy tym o dołączeniu odpowiedniej klauzuli, o której informację znajdziesz poniżej.</p>",
+        "style": "career_text"
+      },
+      {
+        "content_group": "section",
+        "title": "Social media specialist",
+        "content": "<h3 class=\"page-title\" style=\"text-align: center;\"><strong>SOCIAL MEDIA SPECIALIST</strong></h3>\n<p style=\"text-align: center;\">Preferowana lokalizacja: <strong>Wrocław</strong></p>\n<p style=\"text-align: center;\">DO TEJ ROLI SZUKAMY OSOBY, KTÓRA:</p>\n<ul>\n<li>posiada minimum <strong>3-letnie doświadczenie</strong> w zarządzaniu profilami\n\t\t\t<br/>powyżej 10.000 fanów w social media;</li>\n<li>nie boi się tworzenia ciekawych i intrygujących postów;</li>\n<li>ma doświadczenie w prowadzeniu kampanii reklamowych FacebookAds oraz InstagramAds;</li>\n<li>zna narzędzia analityczne (Sotrender, Iconosquare lub inne)\n\t\t\t<br/>oraz umie analizować dane, a co za tym idzie optymalizować działania;</li>\n<li>wie, jak (właściwie) korzystać z podstawowych programów\n\t\t\t<br/>i/lub narzędzi graficznych (np. Canva oraz Photshop);</li>\n</ul>\n<p style=\"text-align: center;\"><u>Zależy nam na zapoznaniu się z portfolio dotychczas prowadzonych profili.</u></p>\n<p style=\"text-align: center;\">Jesteśmy elastyczni w temacie formy współpracy (tj. B2B, umowa, inna – w zależności od ustaleń).</p>\n<p style=\"text-align: center;\">Jeśli zainteresowała Cię powyższa oferta, nie czekaj – wyślij swoje CV na adres: <a href=\"mailto:rekrutacja@bvmg.pl\">rekrutacja@bvmg.pl</a>. Pamiętaj przy tym o dołączeniu odpowiedniej klauzuli, o której informację znajdziesz poniżej.</p>\n<hr/>",
+        "style": "career_text"
+      },
+      {
+        "content_group": "section",
+        "title": "Personal data (GDPR)",
+        "content": "<h3 style=\"text-align: center;\"><strong>DANE OSOBOWE </strong></h3>\n<p style=\"text-align: center;\">W celu umożliwienia nam zgodnego z prawem przetwarzania danych osobowych w toku prowadzonego postępowania rekrutacyjnego prosimy zawrzeć w CV klauzulę zgody o następującej treści:</p>\n<p style=\"text-align: center;\">„Wyrażam zgodę na przetwarzanie przez Buena Vista Media Group spółkę z ograniczoną odpowiedzialnością spółkę kamandytową z siedzibą we Wrocławiu moich danych osobowych zawartych w curriculum vitae na potrzeby postępowania rekrutacyjnego prowadzonego na stanowisko …”</p>\n<p style=\"text-align: center;\">W przypadku braku zgody nie będziemy mogli zgodnie z prawem przetwarzać przekazanych nam danych osobowych, co skutkować będzie usunięciem CV.</p>\n<p style=\"text-align: center;\">Jeśli w danej chwili nie prowadzimy postępowania rekrutacyjnego nie oznacza to, iż w najbliższej przyszłości nie pojawi się interesująca oferta. W celu umożliwienia nam zgodnego z prawem przetwarzania danych osobowych na potrzeby przyszłych postępowań rekrutacyjnych prosimy zawrzeć w CV klauzulę zgody o następującej treści:</p>\n<p style=\"text-align: center;\">„Wyrażam zgodę na przetwarzanie przez Buena Vista Media Group spółka z ograniczoną odpowiedzialnością spółka komandytowa z siedzibą we Wrocławiu moich danych osobowych zawartych w curriculum vitae na potrzeby przyszłych postępowań rekrutacyjnych”</p>\n<p style=\"text-align: center;\">W przypadku udzielenia zgody na wykorzystanie danych osobowych dla celów przyszłych postępowań rekrutacyjnych przechowywane są one przez okres 3 miesięcy. Po tym czasie usuwamy przesłane CV. Ma to na celu dbałość o posiadanie wyłącznie aktualnych danych i przechowywanie ich w sposób ograniczony czasowo. Oczywiście nic nie stoi na przeszkodzie, by po tym czasie przesłać nowe curriculum vitae.</p>\n<p style=\"text-align: center;\">Administratorem przekazanych danych osobowych jest Buena Vista Media Group spółka z ograniczoną odpowiedzialnością spółka komandytowa z siedzibą we Wrocławiu, NIP: 8952178057, REGON: 369258190 wpisana w rejestrze przedsiębiorców Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy dla Wrocławia – Fabrycznej we Wrocławiu, VI Wydział Gospodarczy Krajowego Rejestru Sądowego, pod numerem KRS: 0000729669, adres: 51-523 Wrocław, ul. Laskowicka 7. </p>\n<p style=\"text-align: center;\">W celu realizacji praw wynikających z przepisów o ochronie danych osobowych (o których poniżej) lub uzyskania dalszych informacji prosimy o kontakt pod adresem:\n\t\t<a href=\"mailto:dane@bvmg.pl\">dane@bvmg.pl</a><a href=\"mailto:dane@bvmg.pl\">dane@bvmg.pl</a></p>\n<p style=\"text-align: center;\">Pozyskane dane osobowe przetwarzane będą wyłącznie na podstawie udzielonej zgody oraz w zakresie nią objętym, tj. w celu przeprowadzenia postępowań rekrutacyjnych.</p>\n<p style=\"text-align: center;\">Dane osobowe nie będą udostępniane innym podmiotom, ani nie będą przekazywane do państw trzecich.</p>\n<p style=\"text-align: center;\">Dane osobowe będą przetwarzane do momentu zakończenia postępowania rekrutacyjnego, a w przypadku zgody na przetwarzanie danych osobowych na potrzeby przyszłych postępowań rekrutacyjnych – przez okres 3 miesięcy od ich pozyskania. Niezależnie od celu przekazania danych nie będą one przetwarzane po wycofaniu zgody.</p>\n<p style=\"text-align: center;\">Każdy, kogo dane osobowe są przetwarzane ma prawo żądania od administratora dostępu do danych osobowych, prawo do żądania ich sprostowania, usunięcia lub ograniczenia przetwarzania, prawo wniesienia sprzeciwu a także prawo do przenoszenia danych.</p>\n<p style=\"text-align: center;\">Zgoda na przetwarzanie danych osobowych jest dobrowolna, jednak brak jej wyrażenia uniemożliwi wykorzystanie CV w toku postępowania rekrutacyjnego.</p>\n<p style=\"text-align: center;\">Zgoda na przetwarzanie danych osobowych może być w każdej chwili cofnięta bez wpływu na zgodność z prawem przetwarzania, którego dokonano przed cofnięciem zgody. Zgoda może być cofnięta w dowolny sposób, który umożliwi Administratorowi danych osobowych zapoznanie się wolą osoby, której dane dotyczą.</p>\n<p style=\"text-align: center;\">Każdy, kogo dane są przetwarzane, ma prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych.</p>\n<p style=\"text-align: center;\">Dane osobowe nie podlegają zautomatyzowanym procesom przetwarzania, w tym profilowaniu.</p>",
+        "style": "career_text"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Polityka prywatności",
+    "slug": "polityka-prywatnosci",
+    "content_group": "builder",
+    "is_enabled": 1,
+    "builder": [
+      {
+        "content_group": "hero",
+        "title": "Privacy hero",
+        "variant": "title",
+        "heading": "Polityka prywatności",
+        "placement": "page_hero"
+      },
+      {
+        "content_group": "section",
+        "title": "Privacy policy",
+        "style": "default",
+        "content": "<h2>Polityka prywatności i plików cookies strony internetowej <a data-auto-recognition=\"true\" href=\"http://www.buenavistamediagroup.pl/\" target=\"_blank\">www.buenavistamediagroup.pl</a></h2>\n\n<p>\n\t<br>Data ostatniej aktualizacji: 12.02.2019 r.</p>\n\n<p>Informacje ogólne</p>\n\n<p>\n\t<br>Niniejsza Polityka prywatności i plików cookies strony, zwana dalej Stroną internetową, określa zasady przetwarzania i ochrony danych osobowych oraz wykorzystania plików cookies oraz innych technologii takich jak: Google Analytiycs.</p>\n\n<p>&nbsp;</p>\n\n<p style=\"text-align: center;\">§ 1</p>\n\n<p>Na potrzeby niniejszej polityki prywatności przyjmuje się następujące znaczenie poniższych pojęć:</p>\n\n<ol>\n\t<li>\n\n\t\t<p>Administrator - &nbsp;Buena Vista Media Group spółka z ograniczoną odpowiedzialnością spółka komandytowa &nbsp;z siedzibą we Wrocławiu, ul. Laskowicka 7, 51-523 Wrocław, wpisana do Krajowego Rejestru Sądowego prowadzonego przez Sąd Rejonowy dla Wrocławia Fabrycznej VI Wydział Gospodarczy, KRS: 0000729669, REGON: 369258190, NIP: 8952178057</p>\n\t</li>\n\t<li>\n\n\t\t<p>Strona internetowa - serwis dostępny pod adresem <a data-auto-recognition=\"true\" href=\"http://www.buenavistamediagroup.pl/\" target=\"_blank\">www.buenavistamediagroup.pl</a></p>\n\t</li>\n\t<li>\n\n\t\t<p>Użytkownik - każdy podmiot, który przegląda zawartość Strony internetowej.</p>\n\t</li>\n\t<li>\n\n\t\t<p>RODO - Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE</p>\n\t</li>\n</ol>\n\n<p style=\"text-align: center;\">&nbsp;§ 2</p>\n\n<h3 style=\"text-align: center;\">Dane osobowe</h3>\n\n<p>\n\t<br>\n</p>\n\n<ol>\n\t<li>\n\n\t\t<p>Administratorem danych osobowych Użytkownika w rozumieniu RODO jest Administrator.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Użytkownik może przekazywać swoje dane osobowe Administratorowi za pomocą formularzy dostępnych na Stronie internetowej tj. formularza kontaktowego</p>\n\t</li>\n\t<li>\n\n\t\t<p>Podstawą prawną przetwarzania danych osobowych Użytkowników jest dobrowolna, konkretna, świadoma i jednoznaczna zgoda Użytkownika wyrażona za pomocą odpowiedniego formularza na Stronie internetowej.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Dane osobowe mogą być przetwarzane także w przypadkach, w których Administrator jest upoważniony do przetwarzania danych osobowych na podstawie przepisów prawa lub w celu realizacji zawartej pomiędzy stronami umowy.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Dane osobowe przekazywane Administratorowi przez Użytkownika w ramach formularza kontaktowego przetwarzane są w celu udzielenia odpowiedzi na wysłane za pomocą formularza zapytanie. Podanie danych osobowych przez Użytkownika jest dobrowolne, ale niezbędne, by Użytkownik otrzymał odpowiedź. Przetwarzanie danych w tym celu odbywa się na podstawie prawnie uzasadnionego interesu realizowanego przez administratora (Art.6 ust.1 lit.f RODO). Dane te będą przetwarzane do czasu zakończenia korespondencji oraz 2 lata od jej zakończenia.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Administrator może powierzyć dane osobowe innym podmiotom, z pomocą których realizuje wskazane &nbsp;w poprzednich punktach cele (np. firmom dostarczającym usługę hostingu, firmie księgowej, firmom kurierskim). Administrator gwarantuje poufność wszelkich przekazanych mu danych osobowych.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Dane osobowe są gromadzone z należytą starannością i odpowiednio chronione przed dostępem przez osoby do tego nieupoważnione, a ich przetwarzanie odbywa się zgodnie oraz na warunkach określonych szczegółowo w:</p>\n\n\t\t<ul>\n\t\t\t<li>\n\n\t\t\t\t<p>Rozporządzeniu Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE,</p>\n\t\t\t</li>\n\t\t\t<li>\n\n\t\t\t\t<p>ustawie z dnia 18 lipca 2002 o świadczenie usług drogą elektroniczną,</p>\n\t\t\t</li>\n\t\t\t<li>\n\n\t\t\t\t<p>ustawie z dnia 10 maja 2018 o ochronie danych osobowych.</p>\n\t\t\t</li>\n\t\t</ul>\n\t</li>\n</ol>\n\n<p>&nbsp;</p>\n\n<p>§ 3</p>\n\n<p>Prawa użytkownika</p>\n\n<p>\n\t<br>\n</p>\n\n<ol>\n\t<li>\n\n\t\t<p>Użytkownikowi przysługują prawa związane z przetwarzaniem jego danych osobowych, w tym:</p>\n\t</li>\n</ol>\n\n<ul>\n\t<li>\n\n\t\t<p>prawo dostępu do danych</p>\n\t</li>\n\t<li>\n\n\t\t<p>prawo do poprawienia danych</p>\n\t</li>\n\t<li>\n\n\t\t<p>prawo do ograniczenia przetwarzania danych</p>\n\t</li>\n\t<li>\n\n\t\t<p>prawo do sprzeciwu &nbsp;wobec przetwarzania danych</p>\n\t</li>\n\t<li>\n\n\t\t<p>prawo do usunięcia danych (tzw. prawo do bycia zapomnianym)</p>\n\t</li>\n\t<li>\n\n\t\t<p>prawo do przenoszenia danych</p>\n\t</li>\n\t<li>\n\n\t\t<p>prawo do wniesienia skargi do organu nadzorczego w związku z przetwarzaniem danych osobowych przez Administratora</p>\n\t</li>\n</ul>\n\n<ol>\n\t<li>\n\n\t\t<p>Użytkownik ma prawo do cofnięcia swojej zgody w każdej chwili, jeśli Użytkownik uprzednio wyraził taką zgodę. &nbsp;</p>\n\t</li>\n\t<li>\n\n\t\t<p>W celu realizacji swoich praw Użytkownik powinien skierować odpowiednie żądanie na adres:&nbsp;<a data-auto-recognition=\"true\" href=\"mailto:dane@bvmg.pl\">dane@bvmg.pl</a></p>\n\t</li>\n</ol>\n\n<p>&nbsp;</p>\n\n<p>§ 4</p>\n\n<p>Gromadzone informacje</p>\n\n<p>\n\t<br>\n</p>\n\n<ol>\n\t<li>\n\n\t\t<p>Podczas korzystania przez Użytkownika ze Strony internetowej automatycznie zbierane są dane dotyczące Użytkownika. Do tych danych zalicza się m.in.: adres IP, nazwa domeny, typ przeglądarki, typ systemu operacyjnego. Dane te mogą być zbierane przez pliki cookies (tzw. ciasteczka), a także mogą być zapisywane w logach serwera.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Pliki cookies (tzw. ciasteczka) to pliki wysyłane do komputera lub innego urządzenia (np. laptop, smartfon, tablet) Użytkownika podczas przeglądania Strony internetowej. Pliki cookie zapamiętują preferencje Użytkownika, co umożliwia podnoszenie jakości świadczonych usług, poprawianie wyników wyszukiwania i trafności wyświetlanych informacji oraz anonimowe śledzenie preferencji Użytkownika.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Zgodę na przechowywanie lub uzyskiwanie dostępu do cookies przez Administratora na jego urządzeniu Użytkownik wyraża za pomocą ustawień przeglądarki zainstalowanej na urządzeniu Użytkownika.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Użytkownik może zrezygnować z cookies, wybierając odpowiednie ustawienia w używanej przez siebie przeglądarce stron www. W takiej sytuacji korzystanie ze Strony internetowej przez Użytkownika może być utrudnione (np. strona może pracować wolniej).</p>\n\t</li>\n\t<li>\n\n\t\t<p>Użytkownik może usunąć istniejące pliki cookies z urządzenia, korzystając z odpowiednich funkcji przeglądarki internetowej, programy służące w tym celu lub skorzystanie z odpowiednich narzędzi dostępnych w ramach systemu operacyjnego, z którego korzysta Użytkownik.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Korzystanie ze Strony internetowej wiąże się z przesłaniem zapytań do serwera, na którym przechowywana jest Strona internetowa. Każde takie zapytanie jest zapisywane w logach serwera. Logi obejmują m.in.: adres IP Użytkownika, datę i czas logowania do serwera, informacje o używanej przeglądarce internetowej i systemie operacyjnym.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Dane zapisane w logach serwera nie są łączone w żaden sposób z konkretnymi Użytkownikami &nbsp;Strony internetowej i nie są wykorzystywane przez Administratora w celu identyfikacji Użytkownika. Logi serwera służą do administrowania Stroną internetową, a ich zawartość nie jest ujawniania nikomu poza osobami upoważnionymi do administrowania serwerem.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Na Stronie internetowej są stosowane technologie rejestrujące anonimowo działania podejmowane przez Użytkownika podczas korzystania ze Strony internetowej. Są to m.in.:</p>\n\n\t\t<ol>\n\t\t\t<li>\n\n\t\t\t\t<p>Google Analytics - stosowana w celu analizowania statystyk Strony internetowej</p>\n\t\t\t</li>\n\t\t</ol>\n\t</li>\n\t<li>\n\n\t\t<p>Dane uzyskane przez te narzędzia nie są łączone w żaden sposób z konkretnymi Użytkownikami Strony internetowej i nie są wykorzystywane przez Administratora w celu identyfikacji Użytkownika.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Konsekwencją zastosowania technologii wymienionych w § 3 pkt. 8 będzie &nbsp;zoptymalizowanie Strony internetowej, jej treści oraz oferty Produktów do potrzeb Użytkownika.</p>\n\t</li>\n</ol>\n\n<p>&nbsp;</p>\n\n<p>§ 5</p>\n\n<p>Cel wykorzystania danych</p>\n\n<p>\n\t<br>\n</p>\n\n<p>Dane podane przez Użytkownika lub zbierane automatycznie Administrator wykorzystuje w celu:</p>\n\n<ol>\n\t<li>\n\n\t\t<p>prawidłowego funkcjonowania, konfiguracji, bezpieczeństwa Strony internetowej,</p>\n\t</li>\n\t<li>\n\n\t\t<p>monitorowania stanu sesji,</p>\n\t</li>\n\t<li>\n\n\t\t<p>analiz, badań i audytu wyświetleń Strony internetowej,</p>\n\t</li>\n\t<li>\n\n\t\t<p>a także w celach statystycznych i marketingowych.</p>\n\t</li>\n</ol>\n\n<p>&nbsp;</p>\n\n<p>§ 6</p>\n\n<p>Postanowienia końcowe</p>\n\n<p>\n\t<br>\n</p>\n\n<ol>\n\t<li>\n\n\t\t<p>W niniejszym dokumencie mogą nastąpić zmiany, na które może wpłynąć rozwój technologii internetowej, zmiany prawa w zakresie ochrony danych osobowych oraz rozwój naszej Strony internetowej. Wszelkie zmiany będą komunikowane Użytkownikom niezwłocznie w sposób widoczny i zrozumiały.</p>\n\t</li>\n\t<li>\n\n\t\t<p>Wszelkie pytania lub uwagi dotyczące Polityki prywatności i plików cookies prosimy kierować na adres: &nbsp;<a data-auto-recognition=\"true\" href=\"mailto:dane@bvmg.pl\">dane@bvmg.pl</a></p>\n\t</li>\n</ol>"
+      }
+    ]
+  }
+]

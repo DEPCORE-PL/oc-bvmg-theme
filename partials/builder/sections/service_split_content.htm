@@ -1,0 +1,6 @@
+{% set extraClasses = section.css_classes ? section.css_classes|join(' ') : '' %}
+{% set imageSrc = section.image|slice(0, 4) == 'http' ? section.image : ('/' ~ section.image)|theme %}
+<div class="flex-half{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+    {% if section.image %}<div class="image"><img src="{{ imageSrc }}" alt="" class="parallax-image"></div>{% endif %}
+    <div class="content"><article>{{ section.content|raw }}</article></div>
+</div>

@@ -1,0 +1,21 @@
+-
+    name: Pages
+    class: Tailor\Models\RecordImport
+    file: seeds/data/pages.json
+    attributes:
+        file_format: json
+        blueprint_uuid: 698afed6-70f1-47dd-9dcf-dc2a0f903ff2
+-
+    name: Services
+    class: Tailor\Models\RecordImport
+    file: seeds/data/services.json
+    attributes:
+        file_format: json
+        blueprint_uuid: bde1d092-7eb2-40c0-9caf-c3b5e236283d
+-
+    name: Menus
+    class: Tailor\Models\RecordImport
+    file: seeds/data/menus.json
+    attributes:
+        file_format: json
+        blueprint_uuid: f6dadad7-ce68-4d8e-8a9a-c70c647ef3c1

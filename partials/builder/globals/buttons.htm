@@ -1,0 +1,9 @@
+
+{% for button in buttons %}
+    {% set link = button.page|link %}
+    {% if button.style == 'read-more-arrow' %}
+        <a href="{{ link }}" class="readmore"> {{ button.title }} <span class="arrow">&rarr;</span></a>
+    {% else %}
+        <a href="{{ link }}" class="{{ button.style }} " {{ button.external == true ? 'target="_blank"' }}>{{ button.title }}</a>
+    {% endif %}
+{% endfor %}

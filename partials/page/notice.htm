@@ -1,0 +1,5 @@
+{% set noticeText = siteSettings.notice_text ?: 'Uwaga na fałszywe mejle podszywające się pod BVMG! zobacz więcej →' %}
+{% set noticeUrl = siteSettings.notice_url ?: 'https://www.facebook.com/buenavistamediagroup/posts/pfbid02pRnqA9uJo7G7Q3dwAhfeMHEePj1t4R5w8PGgmqt1hR2PW31M667CEdqdmA85NANfl' %}
+{% if siteSettings.notice_enabled is not defined or siteSettings.notice_enabled is null or siteSettings.notice_enabled %}
+<div class="top-bar" style="text-align:center;padding:0.5em 2em;font-weight:bold;background-color:rgb(249,183,1);font-size:0.8rem"><a style="color:currentColor" href="{{ noticeUrl }}" target="_blank" rel="noopener noreferrer">{% if this.site.locale|slice(0, 2) == 'pl' %}{{ noticeText }}{% else %}{{ noticeText|trans }}{% endif %}</a></div>
+{% endif %}

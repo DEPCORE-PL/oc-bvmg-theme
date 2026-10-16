@@ -1,0 +1,264 @@
+[
+  {
+    "id": 1,
+    "title": "Główne",
+    "slug": "main",
+    "is_enabled": 1,
+    "item": [
+      {
+        "title": "Blog",
+        "url": "/blog",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "O nas",
+        "url": "/o-nas",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Kompetencje",
+        "url": "/kompetencje",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Portfolio",
+        "url": "/portfolio",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Klienci",
+        "url": "/klienci",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Kariera",
+        "url": "/kariera",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Kontakt",
+        "url": "/kontakt",
+        "css_class": "",
+        "is_header": 0
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Copyright",
+    "slug": "copyright",
+    "is_enabled": 1,
+    "item": [
+      {
+        "title": "Polityka prywatności",
+        "url": "/polityka-prywatnosci",
+        "css_class": "",
+        "is_header": 0
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Kompetencje",
+    "slug": "footer-services",
+    "is_enabled": 1,
+    "item": [
+      {
+        "title": "Kompetencje",
+        "url": "",
+        "css_class": "",
+        "is_header": 1
+      },
+      {
+        "title": "Media relations",
+        "url": "/usluga/media-relations",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Social media marketing",
+        "url": "/usluga/social-media-marketing",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Influencer marketing",
+        "url": "/usluga/influencer-marketing",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Event marketing",
+        "url": "/usluga/event-marketing",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "DTP / Projekty graficzne i produkcja materiałów promocyjnych",
+        "url": "/usluga/dtp",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Foto & Wideo",
+        "url": "/usluga/foto-video",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Wsparcie logistyczne",
+        "url": "/usluga/wsparcie-logistyczne",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Komunikacja kryzysowa",
+        "url": "/usluga/komunikacja-kryzysowa",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Employer branding",
+        "url": "/usluga/employer-branding",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Działania CSR",
+        "url": "/usluga/dzialania-csr",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Tworzenie stron WWW",
+        "url": "/usluga/projektowanie-i-budowa-stron-www",
+        "css_class": "",
+        "is_header": 0
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Zaufali nam",
+    "slug": "footer-portfolio",
+    "is_enabled": 1,
+    "item": [
+      {
+        "title": "Zaufali nam",
+        "url": "",
+        "css_class": "",
+        "is_header": 1
+      },
+      {
+        "title": "PR dla branży budowlanej",
+        "url": "/klienci/budownictwo-i-architektura",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "PR dla branży wnętrzarskiej",
+        "url": "/klienci/wnetrza",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "PR dla branży przemysłowej",
+        "url": "/klienci/przemysl",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "PR dla branży FMCG",
+        "url": "/klienci/fmcg-i-kulinaria",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "PR dla branży kulinarnej",
+        "url": "/klienci/fmcg-i-kulinaria",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "PR dla branży motoryzacyjnej",
+        "url": "/klienci/motoryzacja",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "PR dla branży IT",
+        "url": "/klienci/it",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "PR dla budownictwa",
+        "url": "/klienci/budownictwo-i-architektura",
+        "css_class": "",
+        "is_header": 0
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Mapa strony",
+    "slug": "footer-sitemap",
+    "is_enabled": 1,
+    "item": [
+      {
+        "title": "Mapa strony",
+        "url": "",
+        "css_class": "",
+        "is_header": 1
+      },
+      {
+        "title": "O nas",
+        "url": "/o-nas",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Portfolio",
+        "url": "/portfolio",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Kompetencje",
+        "url": "/kompetencje",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Blog",
+        "url": "/blog",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Klienci",
+        "url": "/klienci",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Kariera",
+        "url": "/kariera",
+        "css_class": "",
+        "is_header": 0
+      },
+      {
+        "title": "Kontakt",
+        "url": "/kontakt",
+        "css_class": "",
+        "is_header": 0
+      }
+    ]
+  }
+]

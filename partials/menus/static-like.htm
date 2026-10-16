@@ -1,0 +1,45 @@
+<ul>
+{% for item in items %}
+    {% set destination = '' %}
+    {% set routeName = '' %}
+    {% set originalUrl = item.url|default('')|trim %}
+    {% set cleaned = originalUrl|trim('/') %}
+
+    {% if cleaned starts with 'en/' %}
+        {% set cleaned = cleaned|slice(3) %}
+    {% endif %}
+    {% set parts = cleaned ? cleaned|split('/') : [] %}
+    {% set first = parts[0]|default('') %}
+    {% if first == 'about-us' %}
+        {% set first = 'o-nas' %}
+    {% elseif first == 'clients' %}
+        {% set first = 'klienci' %}
+    {% elseif first == 'service' %}
+        {% set first = 'usluga' %}
+    {% elseif first == 'portfolio-item' %}
+        {% set first = 'case' %}
+    {% endif %}
+
+    {% if originalUrl == '/' or cleaned == 'en' %}
+        {% set routeName = 'home' %}
+        {% set destination = routeName|page({}, false) %}
+    {% elseif parts|length == 1 and first in ['blog', 'portfolio', 'o-nas', 'kompetencje', 'klienci', 'kariera', 'kontakt', 'polityka-prywatnosci'] %}
+        {% set routeName = first %}
+        {% set destination = routeName|page({}, false) %}
+    {% elseif parts|length == 2 and first in ['usluga', 'klienci', 'case', 'wpis'] %}
+        {% set routeName = first == 'case' ? 'portfolio-item' : first %}
+        {% set destination = routeName|page({ slug: parts[1] }, false) %}
+    {% elseif originalUrl %}
+        {% set destination = originalUrl|link %}
+    {% endif %}
+
+    {% set active = routeName and this.page.id == routeName %}
+    <li role="presentation" class="{% if active %}active{% endif %}{% if item.css_class %} {{ item.css_class }}{% endif %}">
+        {% if item.is_header or not originalUrl %}
+            <span>{{ item.title }}</span>
+        {% else %}
+            <a href="{{ destination }}">{{ item.title }}</a>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>

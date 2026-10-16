@@ -1,0 +1,14 @@
+{% set competenciesFallback = this.page.id == 'kompetencje' and not section.content %}
+{% if section.heading or section.content or competenciesFallback %}
+<section class="section services-section">
+    <div class="container center">
+        {% if section.heading %}<h2 class="page-title">{{ section.heading }}</h2>{% endif %}
+        {% if section.content %}{{ section.content|raw }}{% elseif competenciesFallback %}<p>Nowoczesna komunikacja ma wiele twarzy. Sprawdź, które z nich znamy najlepiej.</p>{% endif %}
+    </div>
+    {% partial 'services/tailor-list' services=services %}
+</section>
+{% else %}
+<div class="section services-section">
+    {% partial 'services/tailor-list' services=services %}
+</div>
+{% endif %}

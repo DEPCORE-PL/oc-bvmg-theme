@@ -1,0 +1,9 @@
+<p class="meta">
+    Opublikowano
+    {% if post.categories.count %} in {% endif %}
+    <br>
+    {% for category in post.categories %}
+        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+    on {{ post.published_at|date('M d, Y') }}
+</p>

@@ -1,0 +1,38 @@
+{% set extraClasses = section.css_classes ? section.css_classes|join(' ') : '' %}
+{% if not section.image and not section.theme_image and this.page.id == 'kariera' %}
+{% partial 'builder/sections/career_text' section=section %}
+{% elseif not section.image and not section.theme_image %}
+<div class="section container{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+    <div class="content">
+        {{ section.content|raw }}
+        {% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}
+    </div>
+</div>
+{% else %}
+<div class="section{% if section.with_background %} with-background{% endif %}{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+    <div class="container grid-half">
+        {% if not section.content_on_right %}
+            <div class="lead">
+                {{ section.content|raw }}
+                {% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}
+            </div>
+            <div class="content-right" style="text-align: center">
+                <div>
+                    {% if section.image %}<img src="{{ section.image|media }}" alt="">{% elseif section.theme_image %}<img src="{{ ('/' ~ section.theme_image)|theme }}" alt="">{% endif %}
+                </div>
+            </div>
+        {% else %}
+            <div class="content-right">
+                {{ section.content|raw }}
+                {% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}
+            </div>
+            <div class="content-left" style="text-align: center">
+                <div>
+                    {% if section.image %}<img src="{{ section.image|media }}" alt="">{% elseif section.theme_image %}<img src="{{ ('/' ~ section.theme_image)|theme }}" alt="">{% endif %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endif %}

@@ -1,0 +1,18 @@
+[section mainMenu]
+handle = "Site\Menu"
+identifier = "slug"
+value = "main"
+==
+<button class='menu-toggle'><span class="screen__reader-text">menu</span><span class="lines"></span></button>
+<header class="site-header" id="masthead">
+    {% partial 'page/notice' %}
+    <div class="container inner" style="max-width:90em;justify-content:space-between;margin-top:0">
+        <h1 class='logo' style='position:static'><a href="{{ 'home'|page }}"><svg class="logo" width="186" height="92" viewBox="0 0 186 92"><use xlink:href='#logo'></use></svg></a></h1>
+        <div class="toggable">
+            <nav class="main-navigation">
+                {% partial 'menus/static-like' items=mainMenu.item %}
+                {% partial 'page/languages' %}
+            </nav>
+        </div>
+    </div>
+</header>

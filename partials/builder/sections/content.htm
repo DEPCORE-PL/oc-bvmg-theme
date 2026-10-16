@@ -1,0 +1,5 @@
+{% set extraClasses = section.css_classes ? section.css_classes|join(' ') : '' %}
+{% if section.container %}<div class="section container{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>{% elseif section.html_anchor or extraClasses %}<div{% if extraClasses %} class="{{ extraClasses }}"{% endif %}{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>{% endif %}
+{{ section.content|raw }}
+{% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}
+{% if section.container or section.html_anchor or extraClasses %}</div>{% endif %}

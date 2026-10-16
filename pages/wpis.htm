@@ -1,0 +1,25 @@
+url = "/wpis/:slug"
+layout = "default"
+title = "Blog"
+is_hidden = 0
+seoOptionsMetaTitle = "{{ post.seo_options.meta_title ?: post.title }}"
+seoOptionsMetaDescription = "{{ post.seo_options.meta_description ?: post.short_description}}"
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+seoOptionsModelClass = "RainLab\Blog\Models\Post"
+seoOptionsModelParams = "slug:slug"
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "kategoria"
+[translatable]
+locales[en][meta_title] = "Articles | Buena Vista Media Group"
+locales[en][meta_description] = "Read our latest articles about communications, marketing and PR."
+locales[en][title] = "Blog"
+==
+<div class="blog">
+    {% component 'blogPost' %}
+</div>

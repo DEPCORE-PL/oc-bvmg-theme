@@ -1,0 +1,40 @@
+uuid: 1be4d611-a49d-11ed-9116-3a678152e91c
+handle: Content\Section
+type: mixin
+name: Section
+fields:
+  title:
+    label: Title
+    type: text
+    commentAbove: Used for organizational purposes in the builder.
+    default: Section
+    tab: General
+  heading:
+    type: text
+    label: Heading
+    tab: General
+    commentAbove: Optional visible heading for layouts that need one.
+  content:
+    type: richeditor
+    label: Content
+    tab: General
+  style:
+    label: Layout
+    type: dropdown
+    tab: General
+    options:
+      default: Default
+      center: Centered
+      home_intro: Home introduction
+      career_text: Career content
+      contact: Contact background
+      registration: Registration details
+  buttons:
+    type: mixin
+    source: Content\Buttons
+    tab: General
+  advanced_content:
+    type: mixin
+    source: Content\AdvancedFields
+    label: Advanced Settings
+    tab: Advanced

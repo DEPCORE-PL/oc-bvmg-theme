@@ -1,0 +1,48 @@
+uuid: 31c7a237-fee5-11ec-b7e2-1d5410f76a4d
+handle: Content\Buttons
+type: mixin
+name: Button
+
+fields:
+  buttons:
+    type: repeater
+    label: Buttons
+    maxItems: 2
+    commentAbove: Display links in your content as buttons. Use a Page or specify a link. Max of 2 per content block.
+    prompt: Add a Button
+    form:
+      fields:
+        title:
+          type: text
+          label: Button Title
+          span: row
+          cssClass: col-md-3
+          placeholder: Your button's text
+        page:
+          type: pagefinder
+          label: Page
+          singleMode: true
+          span: row
+          cssClass: col-md-3
+        style:
+          type: dropdown
+          label: Style
+          comment: Change the style of this button.
+          span: row
+          cssClass: col-md-3
+          default: button
+          options:
+            button: Primary
+            button-outline: Outline
+            read-more: Read more
+
+        outline:
+          type: switch
+          label: Outline this button
+          comment: If activated, the button will be outlined
+          span: left
+        external:
+          type: switch
+          label: Open in new tab
+          comment: If activated, when someone clicks this link, it'll open it in a new tab.
+          span: right

@@ -1,0 +1,13 @@
+<div class=" container">
+	<div class="title">
+		{% if this.page.apiBag.staticPage %}
+			{% if hero_title %}
+				<h1 class="page-title">{{ hero_title }}</h1>
+			{% else %}
+				<h1 class="page-title">{{ this.page.title }}</h1>
+			{% endif %}
+		{% else %}
+			<h1 class="page-title ">{{ this.page.title }}</h1>
+		{% endif %}
+	</div>
+</div>

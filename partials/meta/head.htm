@@ -1,0 +1,22 @@
+[seo]
+[global siteSettings]
+handle = "Content\Global"
+==
+<meta charset="utf-8">
+<meta name="author" content="DEPCORE">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{ (siteSettings.head_meta ?: this.theme.head_meta)|raw }}
+{{ (siteSettings.head_scripts ?: this.theme.head_scripts)|raw }}
+{% set verification = siteSettings.google_site_verification ?: this.theme.google_site_verification %}
+{% if verification %}<meta name="google-site-verification" content="{{ verification }}" />{% endif %}
+<link href="{{ 'assets/css/main.min.css'|theme }}?v=10.12" rel="stylesheet">
+<link href="{{ 'assets/css/aos-2026.css'|theme }}?v=10.12" rel="stylesheet">
+<link href="{{ 'assets/css/live-2026.css'|theme }}?v=10.12" rel="stylesheet">
+{% set brandColor = siteSettings.brand_color ?: this.theme.brand_color ?: '#A71D4F' %}
+<meta name="theme-color" content="{{ brandColor }}">
+<link rel="icon" href="{{ 'assets/images/icons/favicon.svg'|theme }}">
+<link rel="mask-icon" href="{{ 'assets/images/icons/mask-icon.svg'|theme }}" color="{{ brandColor }}">
+<link rel="apple-touch-icon" href="{{ 'assets/images/icons/apple-touch-icon.png'|theme }}">
+<meta name="msapplication-TileColor" content="{{ brandColor }}">
+{% styles %}
+{% component 'seo' %}

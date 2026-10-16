@@ -1,0 +1,7 @@
+{% set url = url('/') ~ '/' ~ this.controller.router.getUrl %}
+<footer class="share">
+	<p><strong>{{'Udostępnij'|trans}}</strong></p>
+	<a href="https://www.facebook.com/sharer/sharer.php?u={{ url }}" class='social facebook'><svg width="35" height="35" viewBox="0 0 35 35"><use xlink:href='#facebook'></use></svg></a>
+	<a href="https://www.linkedin.com/shareArticle?mini=true&url={{ url }}"><svg width="35" height="35" viewBox="0 0 35 35"><use xlink:href='#linkedin'></use></svg></a>
+	<a href="https://twitter.com/home?status={{ url }}"><svg width="35" height="35" viewBox="0 0 35 35"><use xlink:href='#twitter'></use></svg></a>
+</footer>

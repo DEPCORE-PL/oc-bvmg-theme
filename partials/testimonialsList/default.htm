@@ -1,0 +1,23 @@
+<div class="depcore__testimonials-container {{ __SELF__.property('show_as') }}">
+	{% for testimonial in __SELF__.testimonials %}
+		<div  class='testimonial-bg' style='background-image: url({{ testimonial.client.logo.path }});'>
+			<blockquote class="testimonial">
+				<div class="testimonial-content">
+					{{ testimonial.content|raw }}
+				</div>
+				<footer class='testimonial-meta'>
+					<div class="author">
+						<strong class="name">{{- testimonial.author -}}</strong>
+						<span class='company-meta'>
+							<strong class='company-name'>{{- testimonial.client.name -}}</strong>
+							<span class="position">{{- testimonial.company_position -}}</span>
+						</span>
+					</div>
+				</footer>
+			</blockquote>
+		</div>
+	{% endfor %}
+</div>
+{% if __SELF__.property('show_as') == 'list' %}
+	{% partial __SELF__~'::pagination' records=__SELF__.testimonials %}
+{% endif %}

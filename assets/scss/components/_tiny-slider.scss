@@ -1,0 +1,40 @@
+// Version: 2.9.2
+
+.tns-outer {
+    padding: 0 !important; // remove padding: clientWidth = width + padding (0) = width
+    [hidden] { display: none !important; }
+    [aria-controls], [data-action] { cursor: pointer; }
+}
+
+.tns-visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+.tns-no-calc {
+  position: relative;
+  left: 0;
+}
+
+.tns-gallery {
+    position: relative;
+    left: 0;
+    min-height: 1px; // make sure slider container is visible
+    // overflow: hidden;
+
+    // > .tns-item {
+    //     position: absolute;
+    //     transition: transform 1s, opacity 1s;
+    //     transition-delay: 1s, 1s ;
+    //     opacity: 0;
+    // }
+
+    // > .tns-slide-active {
+    //     transition-delay: 1s, 1s ;
+    //     opacity: 1;
+    // }
+
+    // > .tns-moving {
+    //     transition: all 0.25s;
+    // }
+}

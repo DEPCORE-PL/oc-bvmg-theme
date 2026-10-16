@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;700&display=swap');
+
+
+.screen__reader-text{
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.has-medium-font-size {
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color:var(--color-text);
+    font-weight: 200;
+
+    strong{display: block;}
+}
+
+h1{
+    font-size: var(--font-size-lg);
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: var(--font-size-h2);
+}
+
+h3{
+    font-size: var(--font-size-md);
+}
+
+.box-title{
+    text-transform: uppercase;
+    margin-bottom: 0;
+
+}
+
+h4{
+
+}
+
+h5{
+
+}
+
+h6{
+
+}
+
+p,ul,ol,blockquote{
+    font-size: 1.2rem;
+}
+
+strong{
+    font-weight: 400;
+}
+
+a:hover{
+    color: var(--brand-yellow);
+}
+
+.title{
+    border-top: var(--hr);
+    border-bottom: var(--hr);
+}
+
+.overtitle{
+    margin-bottom: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    & + .marker{
+        margin-top: 0;
+    }
+}
+
+.lead{
+    font-size: 1.3rem;
+}
+
+.marker{
+    position: relative;
+
+    &:before{
+        position: absolute;
+        left: -60px;
+        top: 10px;
+        content: '';
+        display: inline-block;
+        width: 51px;
+        height: 16px;
+        background-image: url(../images/bvmg-hr.svg);
+        background-size: cover;
+    }
+}
+.blog-meta{
+    margin-bottom: 0;
+}
+.post-title{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.page-title{
+    position: relative;
+
+    &:before{
+        content: '';
+        display: block;
+        background-image: url(../images/bvmg-hr.svg);
+        width: 133px;
+        height: 42px;
+        margin-bottom: 2rem;
+        margin-left: auto;margin-right: auto;
+        background-size: cover;
+    }
+}
+
+
+ol.roadmap {
+    border-left: 1px dashed var(--brand-yellow);
+    margin-left: 1rem;
+    padding: 0;
+    list-style: none;
+    counter-reset: steps;
+
+    li{
+        counter-increment: steps;
+        padding-left: 3rem;
+        position: relative;
+        margin-bottom: var(--spacing);
+
+        &:before,&:after{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            width: 2em;
+            height: 2em;
+            font-size: 1em;
+            line-height: 2;
+            font-weight: normal;
+            left: -1rem;
+            top: 0;
+            content: '';
+        }
+        &:before{
+            background-color: #fff;
+            border: 1px solid var(--brand-yellow);
+            transform: rotate(45deg) translateX(-2px);
+        }
+
+        &:after{
+            content: counter(steps);
+        }
+    }
+
+}

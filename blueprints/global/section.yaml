@@ -1,0 +1,41 @@
+uuid: c320c541-3873-407e-b956-5af480f2c1d4
+handle: Global\Section
+type: entry
+name: Global Sections
+multisite: true
+drafts: true
+
+navigation:
+    parent: Content\Page
+    label: Global Sections
+    icon: ph ph-globe
+    order: 151
+
+fields:
+    is_active:
+        label: Publication Status
+        type: switch
+        default: true
+        span: auto
+        comment: Turn off to hide this section everywhere it has been used.
+
+    admin_description:
+        label: Description (optional)
+        type: text
+        span: auto
+
+    _global_section_builder_style:
+        type: section
+        label: ''
+        cssClass: d-none
+        commentHtml: true
+        comment: |
+            <style>
+                #tailor-form[action*="/tailor/entries/global-section"] li.item:has(> button[data-menuitem] > i.ph-globe-hemisphere-west) {
+                    display: none !important;
+                }
+            </style>
+
+    builder:
+        type: mixin
+        source: Content\Builder

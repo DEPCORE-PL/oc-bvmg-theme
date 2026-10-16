@@ -1,0 +1,8 @@
+<aside class="sidebar">
+	{% for section in this.theme.sidebar_fields %}
+		<div class="widget">
+			{% partial 'sidebar/title' title = section.title %}
+			{% partial 'sidebar/'~section._group section = section limit=section.limit %}
+		</div>
+	{% endfor %}
+</aside>

@@ -1,0 +1,14 @@
+==
+function onEnd(){
+    $this->page['title'] = $this->page->components['ServiceContent']->item->name;
+}
+==
+{% set item= __SELF__.item %}
+{% put hero %}
+<div class="hero">
+    {% partial 'page/title'%}
+</div>
+{% endput%}
+{% for section in item.content_blocks %}
+    {% partial 'blocks/' ~ section._group section=section %}
+{% endfor %}

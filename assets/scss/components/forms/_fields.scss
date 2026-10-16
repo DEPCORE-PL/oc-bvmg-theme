@@ -1,0 +1,114 @@
+label {
+    font-weight: bold;
+    color: $color__brand-primary;
+    margin-right: 10px;
+
+    &.legal {
+        line-height: 1.5;
+        text-transform: none;
+        font-size: 0.58rem;
+        font-weight: normal;
+        display: inline-block;
+        color: var(--brand-gray);
+
+        a {
+            font-size: inherit;
+            font-weight: bold;
+
+        }
+    }
+
+}
+
+input {
+    &[type=text],
+    &[type=password],
+    &[type=phone],
+    &[type=url],
+    &[type=date],
+    &[type=email]{
+        @extend %input;
+    }
+}
+select {
+    @extend %input;
+}
+
+
+textarea {
+    @extend %input;
+    width: 80%;
+}
+
+.fieldset.inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 54em;
+
+    p + p {
+        margin-left: 2rem;
+    }
+}
+
+.custom-form-input {
+    margin-top: 0.85rem;
+}
+
+// .inline-fields {
+//     display: flex;
+
+//     input {
+//         border-bottom-left-radius: 100px;
+//         border-top-left-radius: 100px;
+//         border-right: none;
+
+//         &[type=submit] {
+//             border-bottom-left-radius: 0;
+//             border-top-left-radius: 0;
+//         }
+//     }
+// }
+
+input[type=checkbox],
+input[type=radio] {
+    position: absolute;
+    z-index: 0;
+    transform: scale(0);
+    display: block;
+
+    & + label {
+        padding-left: 30px;
+        @include before-content;
+
+        &:before {
+            position: absolute;
+            left: 0;
+            background-color: #fff;
+            display: inline-block;
+            top: 0;
+        }
+
+        &:before {
+            width: 30px;
+            height: 30px;
+            left: 0;
+        }
+
+        &:before {
+            border-radius: 2px;
+            border: 1px solid $color__brand-primary;
+            height: 15px;
+            width: 15px;
+            transition: background-color 300ms ease;
+        }
+    }
+
+    &:checked + label:before {
+        background-color: $color__brand-secondary;
+    }
+}
+
+input[type=radio] + label:before {
+    border-radius: 50%;
+}

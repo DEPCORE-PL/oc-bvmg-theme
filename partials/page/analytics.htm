@@ -1,0 +1,13 @@
+[global siteSettings]
+handle = "Content\Global"
+==
+{% set analytics = siteSettings.analytics ?: this.theme.analytics %}
+{% if analytics %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ analytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ analytics }}');
+</script>
+{% endif %}

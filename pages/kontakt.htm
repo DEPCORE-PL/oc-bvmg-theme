@@ -1,0 +1,47 @@
+url = "/kontakt"
+layout = "default"
+title = "Kontakt"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+seoOptionsMetaTitle = "Agencja kreatywna | PR | BVMG| Public Relations| Eventy | Social Media"
+seoOptionsMetaDescription = "Poszukujesz agencji PR, kreatywnej lub interesują Cię inne działania zgodne z naszą działalnością? Zadzwoń lub napisz."
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[emptyForm]
+mail_enabled = 0
+mail_subject = "Formularz ze strony BVMG"
+mail_recipients[] = "info@buenavistamediagroup.pl"
+mail_template = "blakejones.magicforms::mail.notification"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+rules[imie] = "required|min:2|max:100"
+rules[nazwisko] = "required|min:2|max:100"
+rules[email] = "required|email|max:255"
+rules[telefon] = "required|min:6|max:30"
+rules[temat] = "required|in:zapytanie,inne,oferta,wspolpraca"
+rules[wiadomosc] = "required|min:5|max:5000"
+rules[rodo] = "accepted"
+reset_form = 1
+messages_success = "Wiadomość została wysłana. Dziękujemy za kontakt!"
+messages_errors = "Nie udało się wysłać formularza. Sprawdź wprowadzone dane."
+
+[section pageContent]
+handle = "Content\Page"
+identifier = "slug"
+value = "kontakt"
+[translatable]
+locales[en][meta_title] = "Contact | Buena Vista Media Group"
+locales[en][meta_description] = "Get in touch with the BVMG PR agency in Wrocław."
+locales[en][title] = "Contact"
+==
+{% partial 'builder/items' section=pageContent %}

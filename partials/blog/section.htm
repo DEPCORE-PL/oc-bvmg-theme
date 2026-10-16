@@ -1,0 +1,10 @@
+<section class="base__container">
+	<h2 class="line-after">Blog</h2>
+	<div>
+		{% partial 'blog/searchform'  %}
+	</div>
+	<section class="grid__third grid__with-gap">
+		{% component 'blogPosts' %}
+		<a href="{{ url('blog') }}" class='fat-link'>wszystkie wpisy</a>
+	</section>
+</section>

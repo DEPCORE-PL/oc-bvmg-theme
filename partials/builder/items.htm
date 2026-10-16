@@ -1,0 +1,6 @@
+{% set insideGlobalSection = insideGlobalSection|default(false) %}
+{% for block in section.builder %}
+    {% if block.content_group != 'global_section' or not insideGlobalSection %}
+        {% partial 'builder/sections/' ~ block.content_group section=block insideGlobalSection=insideGlobalSection %}
+    {% endif %}
+{% endfor %}

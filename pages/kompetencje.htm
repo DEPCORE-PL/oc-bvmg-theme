@@ -1,0 +1,27 @@
+url = "/kompetencje"
+layout = "default"
+title = "kompetencje"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[collection services]
+handle = "Services\Service"
+sortColumn = "id"
+sortDirection = "asc"
+
+[section pageContent]
+handle = "Content\Page"
+identifier = "slug"
+value = "kompetencje"
+[translatable]
+locales[en][meta_title] = "Our Competences | Buena Vista Media Group"
+locales[en][meta_description] = "Explore BVMG services: media relations, social media, events, employer branding and more."
+locales[en][title] = "Competences"
+==
+{% partial 'builder/items' section=pageContent %}

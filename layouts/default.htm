@@ -1,0 +1,27 @@
+description = "Default layout"
+
+[global siteSettings]
+handle = "Content\Global"
+==
+<!DOCTYPE html>
+<html lang="{{ this.site.locale ?: 'pl' }}">
+    <head>
+    {% partial 'meta/head' %}
+    </head>
+    <body class='home{% if this.page.id == 'kariera' %} static-page kariera{% elseif this.page.id == 'kontakt' %} kontakt{% elseif this.page.id == 'usluga' %} bvmg-service-page{% endif %}'>
+        {% partial 'page/loader' %}
+        {% partial 'assets/icons' %}
+        {% partial 'page/header' %}
+        {% partial 'page/social-live' %}
+        {% partial 'page/hero' %}
+        <main id='page' class='page-content transition-fade'>
+            {% page %}
+        </main>
+        {% partial 'page/footer' %}
+        <script src="{{ 'assets/js/production-2026-combined.js'|theme }}?v=10.12"></script>
+        {% partial 'page/analytics' %}
+    {% if this.page.id == 'kontakt' %}
+        {% framework extras %}
+    {% endif %}
+    </body>
+</html>

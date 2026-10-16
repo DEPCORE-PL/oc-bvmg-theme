@@ -1,0 +1,6 @@
+{% for post in posts %}
+    {% partial 'blog/single-post-list' post=post %}
+{% else %}
+    <div class="no-data">{{ searchResult.noPostsMessage }}</div>
+{% endfor %}
+

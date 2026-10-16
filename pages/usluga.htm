@@ -1,0 +1,24 @@
+url = "/usluga/:slug"
+layout = "default"
+title = "Usługa"
+is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
+
+[section service]
+handle = "Services\Service"
+identifier = "slug"
+value = "{{ :slug }}"
+[translatable]
+locales[en][meta_title] = "Services | Buena Vista Media Group"
+locales[en][meta_description] = "Discover BVMG communications and public relations services."
+locales[en][url] = "/service/:slug"
+locales[en][title] = "Service"
+==
+{% put hero %}
+<div class="hero">
+    <div class="container"><div class="title"><h1 class="page-title">{{ service.title }}</h1></div></div>
+</div>
+{% endput %}
+{% partial 'builder/items' section=service %}
+{% partial 'buttons/return' link='kompetencje'|page title='kompetencje'|trans %}

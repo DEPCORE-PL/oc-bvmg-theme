@@ -1,0 +1,31 @@
+figure {
+   &.icon{
+      width: 64px;
+   }
+   svg{
+      width: 100%;
+      height: auto;
+   }
+}
+
+svg.logo {
+   max-width: 250px;
+
+   path{
+      fill: inherit;
+   }
+
+   use {
+      fill: var(--brand-blue);
+   }
+}
+
+img,video,iframe,svg {
+   max-width: 100%;
+}
+
+.simpleParallax {
+   height: 30vh;
+   min-height: 300px;
+   max-height: 400px;
+}

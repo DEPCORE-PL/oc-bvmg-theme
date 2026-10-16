@@ -1,0 +1,6 @@
+@supports( grid-area:auto ){
+
+    @media screen and (min-width: $size__mobile){
+       @import 'base';
+    } // size-mobile ends
+} // support ends

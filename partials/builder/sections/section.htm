@@ -1,0 +1,19 @@
+{% set extraClasses = section.css_classes ? section.css_classes|join(' ') : '' %}
+{% if section.style == 'career_text' %}
+{% partial 'builder/sections/career_text' section=section %}
+{% elseif section.style == 'contact' %}
+<div class="contact-bg blue-matte{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}><div class="container">{{ section.content|raw }}</div></div>
+{% elseif section.style == 'registration' %}
+<section{% if extraClasses %} class="{{ extraClasses }}"{% endif %}{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}><div class="brand-title" style="margin-top: 0;"><h1>{{ section.heading ?: 'Dane rejestrowe' }}</h1></div><div class="container" style="text-align: center;">{{ section.content|raw }}</div></section>
+{% elseif section.style == 'home_intro' %}
+<section class="container bvmg-home-intro{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+    <div class="content center">
+        {{ section.content|raw }}
+        {% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}
+    </div>
+</section>
+{% elseif section.style == 'center' %}
+<section class="container{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}><div class="content center">{{ section.content|raw }}{% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}</div></section>
+{% else %}
+<section class="section{% if this.page.id == 'o-nas' %} bvmg-about-copy{% endif %}{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}><div class="container">{{ section.content|raw }}{% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}</div></section>
+{% endif %}

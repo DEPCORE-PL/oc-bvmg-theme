@@ -1,0 +1,6 @@
+<div class="flex-half{% if section.background_color == '1' %} blue{% endif %}">
+    <div class="image"{% if section.image %} style="background-image: url('{{ section.image|media }}');"{% endif %}></div>
+    <div class="content">
+        <article>{{ section.content|raw }}</article>
+    </div>
+</div>

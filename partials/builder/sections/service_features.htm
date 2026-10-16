@@ -1,0 +1,17 @@
+{% set extraClasses = section.css_classes ? section.css_classes|join(' ') : '' %}
+<div class="icons-section{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+    {% if section.video %}
+        {% set videoSrc = section.video|slice(0, 4) == 'http' ? section.video : ('/' ~ section.video)|theme %}
+        <div class="parallax-hero video-hero"><video mute loop autoplay><source src="{{ videoSrc }}" type="video/mp4"></video>
+    {% endif %}
+        <div class="grid-third points container">
+            {% for point in section.points %}
+                {% set iconSrc = point.image|slice(0, 4) == 'http' ? point.image : ('/' ~ point.image)|theme %}
+                <div class="icon-box" data-aos="fade-in" data-aos-easing="ease" data-aos-offset="-200" data-aos-delay="{{ loop.index * 1000 }}" data-aos-duration="1000" data-aos-once="false" data-aos-mirror="false" data-aos-anchor-placement="center-center">
+                    <figure>{% if point.image %}<img src="{{ iconSrc }}" alt="">{% endif %}</figure>
+                    <h3>{{ point.first_title }} <strong>{{ point.second_title }}</strong></h3>
+                </div>
+            {% endfor %}
+        </div>
+    {% if section.video %}</div>{% endif %}
+</div>

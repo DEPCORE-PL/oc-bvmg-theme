@@ -1,0 +1,7 @@
+<section class="section container">
+    {{ section.content|raw }}
+    <div class="grid-four">
+        {% component 'brandsClientsList' %}
+    </div>
+    {% if section.buttons %}<div class="center">{% partial 'builder/globals/buttons' buttons=section.buttons %}</div>{% endif %}
+</section>

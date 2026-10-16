@@ -1,0 +1,26 @@
+url = "/case/:slug"
+layout = "default"
+title = "Portfolio"
+is_hidden = 0
+meta_title = "Agencja Kreatywna | BVMG | Public Relations | Wrocław"
+meta_description = "Przedstawiamy część naszych realizacji, takich jak:  działania public relations, social media marketing."
+seoOptionsMetaTitle = "{{portfolio.seo_options.meta_title ?: portfolio.title}}"
+seoOptionsMetaDescription = "{{portfolio.seo_options.meta_description ?: portfolio.title}}"
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+seoOptionsModelClass = "Depcore\Portfolio\Models\PortfolioItem"
+seoOptionsModelParams = "slug:slug"
+
+[PortfolioItem]
+
+[PortfolioNavigation]
+[translatable]
+locales[en][meta_title] = "Portfolio Case Study | Buena Vista Media Group"
+locales[en][meta_description] = "A BVMG public relations and marketing project."
+locales[en][url] = "/portfolio-item/:slug"
+locales[en][title] = "Portfolio"
+==
+{% component 'PortfolioItem' %}

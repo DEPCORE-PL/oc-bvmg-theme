@@ -1,0 +1,98 @@
+uuid: d52e596a-a49c-11ed-aa99-4fae4a0d1298
+handle: Content\Hero
+type: mixin
+name: Hero
+
+fields:
+    title:
+        label: Title
+        commentAbove: Used for organizational purposes in the builder.
+        type: text
+        span: full
+        tab: General
+        default: Hero
+
+    placement:
+        label: Placement
+        type: dropdown
+        span: left
+        tab: General
+        default: page_hero
+        options:
+            page_hero: Page hero
+            inline: Inline
+
+    variant:
+        label: Hero type
+        type: dropdown
+        span: right
+        tab: General
+        default: title
+        options:
+            title: Page title
+            parallax: Parallax image
+            video: Video
+
+    heading:
+        label: Heading
+        type: textarea
+        size: tiny
+        tab: General
+
+    subtitle:
+        label: Subtitle
+        type: textarea
+        size: tiny
+        tab: General
+
+    content:
+        label: Content
+        type: richeditor
+        span: full
+        tab: General
+        size: small
+
+    slider_content:
+        label: Slider content
+        type: richeditor
+        span: full
+        tab: General
+        size: small
+
+    image:
+        label: Image
+        type: mediafinder
+        mode: image
+        span: left
+        tab: Media
+
+    theme_image:
+        label: Theme image path
+        type: text
+        commentAbove: Use only for images stored in the theme assets.
+        span: right
+        tab: Media
+
+    video:
+        label: Theme video path
+        type: text
+        commentAbove: Use a path relative to the theme root.
+        span: left
+        tab: Media
+
+    section_mode:
+        label: Section spacing
+        type: checkbox
+        span: right
+        tab: Media
+
+    buttons:
+        type: mixin
+        source: Content\Buttons
+        tab: General
+
+    advanced_content:
+        type: mixin
+        source: Content\AdvancedFields
+        label: Advanced Settings
+        tab: Advanced

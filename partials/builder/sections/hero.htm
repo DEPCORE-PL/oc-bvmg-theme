@@ -1,0 +1,28 @@
+{% set extraClasses = section.css_classes ? section.css_classes|join(' ') : '' %}
+{% if section.variant == 'video' %}
+    {% set heroMarkup %}
+        <div class="video-hero hero{% if section.section_mode %} section{% endif %}{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+            <video muted loop autoplay playsinline>
+                <source src="{{ ('/' ~ section.video)|theme }}" type="video/mp4">
+            </video>
+            {% if section.slider_content %}<div class="text-slider">{{ section.slider_content|raw }}</div>{% endif %}
+        </div>
+    {% endset %}
+{% elseif section.variant == 'parallax' %}
+    {% set heroMarkup %}
+        <div class="hero parallax-header{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+            <div class="container"><div class="title"><h1 class="page-title">{{ section.heading }}</h1></div></div>
+            <div class="parallax-container hero-image">
+                {% if section.image %}<img src="{{ section.image|media }}" alt="">
+                {% elseif section.theme_image %}<img src="{{ ('/' ~ section.theme_image)|theme }}" alt="">{% endif %}
+            </div>
+        </div>
+    {% endset %}
+{% else %}
+    {% set heroMarkup %}
+        <div class="hero{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+            {% if section.heading %}<div class="container"><div class="title"><h1 class="page-title">{{ section.heading }}</h1></div></div>{% endif %}
+        </div>
+    {% endset %}
+{% endif %}
+{% if section.placement == 'inline' %}{{ heroMarkup|raw }}{% else %}{% put hero %}{{ heroMarkup|raw }}{% endput %}{% endif %}

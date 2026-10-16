@@ -1,0 +1,75 @@
+.site-header{
+
+    .inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .toggable{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        opacity: 0;
+        transition: opacity 300ms;
+        pointer-events: none;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        font-size: clamp(2rem,10vw,10rem);
+        padding-bottom: 4rem;
+
+        nav ul{
+            display: flex;
+            flex-direction: column;
+        }
+
+        a{
+            color: var(--white);
+
+        }
+
+        .main-navigation ul .active a:before{
+            left: 0;
+            top: 50%;
+            background-color: currentColor;
+        }
+    }
+
+    .menu-in,.menu-out{
+        position: fixed;
+        background-color: var(--brand-yellow);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100vh;
+        left: 0;
+        transition: var(--base-transition);
+        z-index: 9998;
+        pointer-events: none;
+        transition-delay: 300ms;
+    }
+
+    .menu-in{
+        transform: translateX(-150%) rotate(45deg);
+    }
+
+    .menu-out{
+        transform: translateX(150%) rotate(-125deg);
+    }
+
+    &.toggled{
+        .toggable{
+            opacity: 1;
+            pointer-events: all;
+            transition-delay: 300ms;
+        }
+        .menu-in,.menu-out{
+            will-change: transform;
+            transition-delay: 0s;
+            transform: rotate(0) translateX(0);
+        }
+    }
+}

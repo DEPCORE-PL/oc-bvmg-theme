@@ -1,0 +1,6 @@
+{% if section.section_reference %}
+    {% set globalSection = section.section_reference|first %}
+    {% if globalSection and globalSection.is_active %}
+        {% partial 'builder/items' section=globalSection insideGlobalSection=true %}
+    {% endif %}
+{% endif %}

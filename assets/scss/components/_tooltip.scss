@@ -1,0 +1,32 @@
+.tippy-box {
+	background-color: #fff;
+	font-size: rem(10px);
+	line-height: 1.2;
+	border-radius: 5px;
+	padding: 0.5rem;
+	box-shadow: $box__shadow-default;
+	border-bottom: 3px solid $color__brand-primary;
+
+	a {
+		font-size: inherit
+	}
+
+}
+.tippy-box[data-animation=scale][data-placement^=top]{
+	transform-origin:bottom
+}
+
+.tippy-box[data-animation=scale][data-placement^=bottom]{
+	transform-origin:top
+}
+
+.tippy-box[data-animation=scale][data-placement^=left]{
+	transform-origin:right
+}
+
+.tippy-box[data-animation=scale][data-placement^=right]{
+	transform-origin:left
+}
+.tippy-box[data-animation=scale][data-state=hidden]{
+	transform:scale(.5);opacity:0
+}

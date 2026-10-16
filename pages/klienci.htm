@@ -1,0 +1,41 @@
+url = "/klienci/:slug?"
+layout = "default"
+title = "Klienci"
+is_hidden = 0
+meta_title = "Klienci | Agencja PR | Kreatywna | BVMG | Wrocław"
+meta_description = "Nasza agencja kreatywna działa dla Klientów z wielu branż, m.in. budowlanej, IT, FMCG, przemysłowej, wnętrzarskiej i innych."
+seoOptionsMetaTitle = "Agencja PR | Kreatywna | BVMG | Wrocław | Polska"
+seoOptionsMetaDescription = "Nasza agencja kreatywna działa dla Klientów z wielu branż, m.in. budowlanej, IT, FMCG, przemysłowej, wnętrzarskiej i innych."
+seoOptionsEnabledInSitemap = 1
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[brandsClientsList]
+limit = 9999
+url = "klienci"
+slug = ":slug"
+[translatable]
+locales[en][meta_title] = "Clients | Buena Vista Media Group"
+locales[en][meta_description] = "Discover the companies and industries we work with at BVMG."
+locales[en][url] = "/clients/:slug?"
+locales[en][title] = "Clients"
+==
+<?php
+function onEnd(){
+    $this->page['title'] = $this->page->components['brandsClientsList']->title;
+}
+?>
+==
+{% put hero %}
+<div class="grid-five hero">
+	{% partial 'brandsClientsList::brandnavigation' %}
+</div>
+{% endput %}
+<section class="section ">
+	<div class="brand-title"><h1>{{this.page.title}}</h1></div>
+	<div class="grid-four container">
+        {% component 'brandsClientsList' %}
+	</div>
+</section>

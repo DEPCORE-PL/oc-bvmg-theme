@@ -1,0 +1,39 @@
+url = "/"
+layout = "default"
+title = "Buena Vista Media Group"
+is_hidden = 0
+meta_title = "Agencja PR | BVMG | Public Relations | Wrocław"
+meta_description = "Agencja BVMG - PR – Kreatywna - Media Relations - Public Relations - Eventy - CSR - Komunikacja Kryzysowa – Employer Branding – Social Media – Fotografia Biznesowa"
+robot_index = "index"
+robot_follow = "follow"
+seoOptionsMetaDescription = "Agencja BVMG - PR – Kreatywna - Media Relations - Public Relations - Eventy - CSR - Komunikacja Kryzysowa – Employer Branding – Social Media – Fotografia Biznesowa"
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+
+[collection services]
+handle = "Services\Service"
+sortColumn = "id"
+sortDirection = "asc"
+
+[brandsClientsList]
+limit = 16
+
+[testimonialsList]
+show_as = "list"
+max_items = 5
+show_client_logo = 1
+per_page = 10
+
+[section pageContent]
+handle = "Content\Page"
+identifier = "slug"
+value = "home"
+[translatable]
+locales[en][meta_title] = "PR Agency | Public Relations | Buena Vista Media Group"
+locales[en][meta_description] = "BVMG is a PR and communication agency based in Wrocław. We help brands build meaningful connections."
+locales[en][title] = "Buena Vista Media Group"
+==
+{% partial 'builder/items' section=pageContent %}

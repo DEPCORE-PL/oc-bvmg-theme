@@ -1,0 +1,6 @@
+{% if this.theme.main_email %}
+	<a href="mailto:{{ this.theme.main_email }}" class=email>{{ this.theme.main_email }}</a>
+{% endif %}
+{% if this.theme.main_phone %}
+	<a href="tel:{{ this.theme.main_phone|trim }}" class='phone'>{{ this.theme.main_phone }}</a>
+{% endif %}

@@ -1,0 +1,21 @@
+title = "Portfolio"
+url = "/portfolio"
+layout = "default"
+meta_title = ""
+meta_description = ""
+is_hidden = 0
+
+[PortfolioList]
+[translatable]
+locales[en][meta_title] = "Portfolio | Buena Vista Media Group"
+locales[en][meta_description] = "Discover projects and case studies delivered by BVMG."
+locales[en][title] = "Portfolio"
+==
+{% put hero %}
+<div class="hero">
+    {% partial 'page/title' %}
+</div>
+{% endput%}
+<div class="section">
+   {% component 'PortfolioList' %}
+</div>

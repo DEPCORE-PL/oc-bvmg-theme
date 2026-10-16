@@ -1,0 +1,50 @@
+.hero{
+    position: relative;
+    overflow: hidden;
+
+    video{
+        aspect-ratio: 3/1;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .tns-outer{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text-slider {
+        color: var(--white);
+
+        p{
+            font-size: var(--font-size-large);
+            // text-shadow: 0 0 10px hsl(0 0% 0% / 0.7);
+
+            strong{
+                display: block;
+            }
+        }
+    }
+}
+
+.video-hero{
+    position: relative;
+
+    &::before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // z-index: 2;
+        background-color: rgba(57,114,155,0.33);
+    }
+}

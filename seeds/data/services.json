@@ -1,0 +1,566 @@
+[
+  {
+    "id": 1,
+    "title": "Media relations",
+    "slug": "media-relations",
+    "is_enabled": 1,
+    "short_description": "<p>Budowa wizerunku w świecie nowoczesnej komunikacji to zadanie wymagające odpowiednio dobranej i skutecznie realizowanej strategii.</p>",
+    "card_image": "assets/images/services/media-relations.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "assets/media/filmy/social media.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/content.svg",
+            "first_title": "Jakościowe",
+            "second_title": "treści"
+          },
+          {
+            "image": "assets/media/ikony/contacts.svg",
+            "first_title": "Szeroka baza",
+            "second_title": "kontaktów"
+          },
+          {
+            "image": "assets/media/ikony/evolution.svg",
+            "first_title": "Ewaluacja",
+            "second_title": "działań"
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Budowa wizerunku w świecie nowoczesnej komunikacji to zadanie wymagające odpowiednio dobranej i skutecznie realizowanej strategii. Kluczowe jest utrzymywanie relacji z przedstawicielami najważniejszych mediów i dostarczanie im wartościowych materiałów budujących pożądany wizerunek firmy.&nbsp;</p>",
+        "image": "assets/media/Zdjecia do kompetencji/0a8802f2cb234551bc855be44c0f34de.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Strategicznie planujemy i tworzymy wysokiej jakości materiały prasowe, wykorzystywane zarówno w tradycyjnych mediach drukowanych, jak i mediach elektronicznych. Dystrybucję prowadzimy przez autorski panel wysyłkowy. Stale dbamy i rozwijamy kontakty z dziennikarzami, a efekty naszych działań kontrolujemy za pomocą sprawdzonych narzędzi monitoringu mediów.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/20181213_174407.jpg"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": " Zastanawiasz się, jak to wygląda w praktyce?",
+        "link_text": "Zobacz nasz projekt dla Baumit!",
+        "portfolio_url": "/pl/case/media-relations-dla-baumit",
+        "left": "<div data-mesh-id=\"comp-jr6k91uainlineContent\" data-testid=\"inline-content\"><div data-mesh-id=\"comp-jr6k91uainlineContent-gridContainer\" data-testid=\"mesh-container-content\"><div data-testid=\"richTextElement\"><h4 style=\"text-align: left;\">Chcesz zobaczyć swoją firmę w mediach?</h4><h3 style=\"text-align: left;\"><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3></div></div></div>"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Social media marketing",
+    "slug": "social-media-marketing",
+    "is_enabled": 1,
+    "short_description": "<p>Nasze działania opieramy na kreowaniu ciekawych, angażujących odbiorców treści. Prowadzimy firmowe profile, blogi i kanały, wykorzystując możliwości wybranych narzędzi i platform. Ich dobór uzależniamy od potencjału marki oraz określonych celów.</p>",
+    "card_image": "assets/images/services/social-media.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "assets/media/filmy/social media.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/monitor.svg",
+            "first_title": "Tworzenie",
+            "second_title": "angażujących treści"
+          },
+          {
+            "image": "assets/media/ikony/gear.svg",
+            "first_title": "Odpowiedni",
+            "second_title": "dobór narzędzi"
+          },
+          {
+            "image": "assets/media/ikony/evolution.svg",
+            "first_title": "Ewaluacja",
+            "second_title": "działań"
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Media społecznościowe to wielkie możliwości, ale także wyzwania dla firm. Dostępne narzędzia umożliwiają kontakt z bardzo zróżnicowanym odbiorcą – od klienta, przez partnera biznesowego, po aktualnych lub potencjalnych pracowników. Kluczowa jest tu skuteczność w wykorzystywaniu szans i unikaniu zagrożeń</p>",
+        "image": "assets/media/Zdjecia do kompetencji/20190208_104358.jpg"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Nasze działania opieramy na kreowaniu ciekawych, angażujących odbiorców treści. Prowadzimy firmowe profile, blogi i kanały, wykorzystując możliwości wybranych narzędzi i platform. Ich dobór uzależniamy od potencjału marki oraz określonych celów. Komunikację projektujemy zgodnie z wizerunkiem marki i stylem odbiorców, do których chcemy dotrzeć.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_5592958660344fa992d6f82a30132f21_mv2.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p><strong>Proponujemy kompleksowe prowadzenie kont w serwisach społecznościowych, m.in. Facebook, Instagram czy LinkedIn.</strong></p><ul><li>opracowanie strategii komunikacji</li><li>tworzenie (copy + grafika), publikacja postów i moderacja komentarzy</li><li>organizacja konkursów</li><li>obsługa kampanii reklamowych</li><li>raportowanie - podsumowanie działań</li></ul>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_f1a721b4f6c340069f03d7f79ed649a9_mv2.webp"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": "Chcesz sprawdzić, jak to robimy?",
+        "link_text": "Zobacz nasz projekt dla KiK!",
+        "portfolio_url": "/pl/case/social-media-dla-kik",
+        "left": "<h4 style=\"text-align: left;\">Szukasz pomysłu na firmowe social media?</h4><h3 style=\"text-align: left;\"><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3>"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Influencer marketing",
+    "slug": "influencer-marketing",
+    "is_enabled": 1,
+    "short_description": "<p>Dzięki nowoczesnym mediom „liderami opinii\" zostaje wielu twórców autorskich blogów, video blogów i innych kanałów komunikacji social media, w tym zwłaszcza Instagrama. &nbsp;</p>",
+    "card_image": "assets/images/services/influencer-marketing.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "assets/media/filmy/social media.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/creativity.svg",
+            "first_title": "Kreatywne",
+            "second_title": "pomysły"
+          },
+          {
+            "image": "assets/media/ikony/authenticity.svg",
+            "first_title": "Autentyczność",
+            "second_title": ""
+          },
+          {
+            "image": "assets/media/ikony/evolution.svg",
+            "first_title": "Ewaluacja",
+            "second_title": "działań"
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><p>Dzięki nowoczesnym mediom „liderami opinii\" zostaje wielu twórców autorskich blogów, video blogów i innych kanałów komunikacji social media, w tym zwłaszcza Instagrama. Influencerzy często są dla swoich odbiorców niczym dobry znajomy, który szczerze opowie im o swoich odczuciach, będąc przy tym źródłem informacji i inspiracji. A rekomendacja zaufanej osoby to dla większości odbiorców najskuteczniejszy argument przemawiający na korzyść marki, produktu czy usługi. Jednocześnie trzeba pamiętać o tym, że najważniejszą cechą dobrego influencer marketingu jest wiarygodność.</p><div data-hook=\"bgLayers\"><div data-mesh-id=\"comp-jqp8ph9pinlineContent-gridContainer\" data-testid=\"mesh-container-content\"><div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><br></div></div></div></div>",
+        "image": "assets/media/Zdjecia do kompetencji/5e4ebe6edd50441480b429d0a71e7f4f.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>W realizowaniu influencer marketingu oprócz autentyczności stawiamy na wzajemne inspirowanie i oryginalne pomysły. Budujemy relacje influencera z marką, by następnie móc za jego pośrednictwem dotrzeć do kolejnych odbiorców. Każda taka współpraca to inna historia, dlatego wybór osoby, formę, czas i zakres wspólnych działań zawsze planujemy indywidualnie, jednocześnie na bieżąco analizując efekty naszej pracy.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/d7913df8f4514423a07ab8ea1cd8cf95.webp"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": "Jak wygląda autentyczny influencer marketing?",
+        "link_text": "Zobacz nasz projekt dla KiK!",
+        "portfolio_url": "/pl/case/influencer-marketing-dla-kik",
+        "left": "<h4>Chcesz, by Twoja firma inspirowała influencerów?</h4><h3><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3>"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Event marketing",
+    "slug": "event-marketing",
+    "is_enabled": 1,
+    "short_description": "<p>Są uroczystości, które nawet po wielu latach wspominamy z rozrzewnieniem, przywołując z pamięci wyjątkową atmosferę, oryginalne atrakcje czy scenografię wydarzenia.</p>",
+    "card_image": "assets/images/services/event-marketing.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "assets/media/filmy/social media.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/thumbup.svg",
+            "first_title": "Wyjątkowy",
+            "second_title": "Klimat"
+          },
+          {
+            "image": "assets/media/ikony/gear.svg",
+            "first_title": "Perfekcyjna",
+            "second_title": "Organizacja"
+          },
+          {
+            "image": "assets/media/ikony/360.svg",
+            "first_title": "",
+            "second_title": "Kompleksowość"
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Są uroczystości, które nawet po wielu latach wspominamy z rozrzewnieniem, przywołując z pamięci wyjątkową atmosferę, oryginalne atrakcje czy scenografię wydarzenia. Warto sprawić, by takie wspomnienia towarzyszyły wszystkim uczestnikom firmowego eventu, bez względu na to, czy jest to impreza jubileuszowa, zespołowa integracja, finał konkursu czy christmas party.</p><div data-mesh-id=\"comp-jqp9w94einlineContent\" data-testid=\"inline-content\"><div data-mesh-id=\"comp-jqp9w94einlineContent-gridContainer\" data-testid=\"mesh-container-content\"><div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><br></div></div></div>",
+        "image": "assets/media/Zdjecia do kompetencji/e20b0d97c6d24ccebb794dea7e942e18.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Przygotowując event zawsze myślimy o tym, jak za kilka lat będą go pamiętać obecni na wydarzeniu goście. Punktem wyjścia jest koncepcja, za którą podążają kolejne wyzwania, dlatego w realizacjach eventowych stawiamy na kompleksową obsługę – od pomysłu, przez dobór miejsca i atrakcji, po przygotowanie oraz techniczną realizację scenariusza i scenografii. Dbamy o to, by każdy event był jedynym w swoim rodzaju przeżyciem dla wszystkich uczestników i robimy to z ogromną przyjemnością!</p>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_d43eed53510844d595267ae3c02a2cfe_mv2_d_5570_3713_s_4_2.webp"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": "Jak uczcić okazję, która zdarza się raz na 25 lat?",
+        "link_text": "Zobacz nasz projekt dla Cedo!",
+        "portfolio_url": "/pl/case/event-z-okazji-25-lecia-cedo",
+        "left": "<h4>Przed Twoją firmą okazja do świętowania?</h4><h3><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3>"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "DTP / Projekty graficzne i produkcja materiałów promocyjnych",
+    "slug": "dtp",
+    "is_enabled": 1,
+    "short_description": "<p>Dobra informacja powinna łączyć jakościową treść z atrakcyjną formą. Rynek oferuje nam mnóstwo zdjęć, fontów, a także różne formy – ulotka, folder, katalog, plakat... Do tego ogromny wybór tego, na czym i w jaki sposób zdecydujemy się zaprezentować nasz przekaz.</p>",
+    "card_image": "assets/images/services/dtp.png",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "assets/media/filmy/social media.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/360.svg",
+            "first_title": "",
+            "second_title": "Kompleksowość"
+          },
+          {
+            "image": "assets/media/ikony/monitor.svg",
+            "first_title": "",
+            "second_title": "Estetyka"
+          },
+          {
+            "image": "assets/media/ikony/skutecznosc.svg",
+            "first_title": "",
+            "second_title": "Skuteczność"
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Dobra informacja powinna łączyć jakościową treść z atrakcyjną formą. Rynek oferuje nam mnóstwo zdjęć, fontów, a także różne formy – ulotka, folder, katalog, plakat... Do tego ogromny wybór tego, na czym i w jaki sposób zdecydujemy się zaprezentować nasz przekaz. Od czego zacząć i jak to wszystko połączyć w całość, zwłaszcza wtedy, gdy zależy nam na czasie?</p>",
+        "image": "assets/media/Zdjecia do kompetencji/dc5d5711b3924fa697781873af51c84b.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Kreatywne projekty oraz sprawny skład i produkcja to nasz sposób, by dostarczać Klientom produkty DTP spełniające oczekiwania i potrzeby odbiorców. Projektujemy i realizujemy zróżnicowane materiały informacyjne oraz reklamowe. W każdym przypadku dbamy o to, by projekty były spójne z koncepcją komunikacyjną marki i pomagały realizować określone cele.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/246aabcc2cac4e1d8cca74b706de1abd.webp"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": "DTP dla odbiorców z całego świata?",
+        "link_text": "Sprawdź nasz projekt dla Poland IT Meeting!",
+        "portfolio_url": "/pl/case/dtp-dla-poland-it-meeting",
+        "left": "<div data-mesh-id=\"comp-jr81lcgtinlineContent\" data-testid=\"inline-content\"><div data-mesh-id=\"comp-jr81lcgtinlineContent-gridContainer\" data-testid=\"mesh-container-content\"><div data-testid=\"richTextElement\"><h4>Chcesz zrealizować ciekawy projekt DTP?</h4><h3><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3></div></div></div>"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Foto & Wideo",
+    "slug": "foto-video",
+    "is_enabled": 1,
+    "short_description": "<p>„Obraz wart więcej niż tysiąc słów” – to nie tylko domena mistrzów fotografii, ale coraz częściej komunikacyjna konieczność. Żyjemy w kulturze obrazkowej, przez co to właśnie zdjęcia w ogromnym stopniu przykuwają uwagę naszych odbiorców.</p>",
+    "card_image": "assets/images/services/foto-video.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "assets/media/filmy/social media.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/profesionals.svg",
+            "first_title": "Doświadczeni",
+            "second_title": "Specjaliści"
+          },
+          {
+            "image": "assets/media/ikony/tophardware.svg",
+            "first_title": "Topowy",
+            "second_title": "Sprzęt"
+          },
+          {
+            "image": "assets/media/ikony/360.svg",
+            "first_title": " ",
+            "second_title": "Kompleksowość"
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><p>„Obraz wart więcej niż tysiąc słów” – to nie tylko domena mistrzów fotografii, ale coraz częściej komunikacyjna konieczność. Żyjemy w kulturze obrazkowej, przez co to właśnie zdjęcia w ogromnym stopniu przykuwają uwagę naszych odbiorców. Jak to wykorzystać i sprawić, by w fotografii lub filmie oddać charakter modela, atrakcyjność produktu lub klimat miejsca?</p><div data-mesh-id=\"comp-jqpaemw6inlineContent\" data-testid=\"inline-content\"><div data-mesh-id=\"comp-jqpaemw6inlineContent-gridContainer\" data-testid=\"mesh-container-content\"><div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><div data-mesh-id=\"comp-kmeon6xoinlineContent\" data-testid=\"inline-content\"><div data-mesh-id=\"comp-kmeon6xoinlineContent-gridContainer\" data-testid=\"mesh-container-content\"><div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><br></div></div></div></div></div></div></div>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_b4f81e5cb2e443e3ac50444c06ac3fa3_mv2_d_4032_3024_s_4_2.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>W naszym zespole korzystamy z talentów doświadczonych fotografów i operatorów. Ich wprawne oko i najwyższej jakości sprzęt to gwarancja uzyskania efektu, który przyciąga uwagę odbiorców. Niezależnie od tego, czy potrzebujesz stworzyć estetyczne portfolio swoich produktów czy pełną emocji relację z firmowego eventu. A wszystko to w doskonałej jakości i skutecznej komunikacyjnie formie.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_4e8a0ec7143442f893e95db2726e84f4_mv2_d_4032_3024_s_4_2.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><p><strong>Profesjonalna fotografia biznesowa i produkcja filmów promocyjnych to nasza pasja.</strong></p><ul><li><p>fotografia portretowa, wizerunkowa, sesje zdjęciowe</p></li><li><p>fotografia produktowa (packshoty)</p></li><li><p>fotografia eventowa, fotorelacje z wydarzeń, imprez firmowych, kongresów, konferencji</p></li><li><p>zdjęcia i filmy instruktażowe (krok po kroku)</p></li><li><p>filmy promocyjne, spoty reklamowe, prezentacje multimedialne</p></li></ul></div>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_84bd8f6f11e146ff92470d2c88b75834_mv2.webp"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": "Nie wiesz, na czym zawiesić oko?",
+        "link_text": "Zobacz nasze projekty foto & wideo!",
+        "portfolio_url": "/pl/case/foto-wideo",
+        "left": "<h4>Chcesz dobrze skadrować swoją firmę?</h4><h3><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3>"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Wsparcie logistyczne",
+    "slug": "wsparcie-logistyczne",
+    "is_enabled": 1,
+    "short_description": "<p>Marketing i logistyka tworzą nierozłączną parę. Przekonaliśmy się o tym wiele razy, pomagając naszym klientom w sprawach, które wykraczały poza standardowy zakres usług. Mamy doświadczenie w logistyce materiałów promocyjnych, dlatego stawiamy na elastyczność.</p>",
+    "card_image": "assets/images/services/wsparcie-logistyczne.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "assets/media/filmy/social media.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/storage.svg",
+            "first_title": "Magazynowanie",
+            "second_title": ""
+          },
+          {
+            "image": "assets/media/ikony/packing.svg",
+            "first_title": "Pakowanie i",
+            "second_title": "wysyłka"
+          },
+          {
+            "image": "assets/media/ikony/terminowosc.svg",
+            "first_title": "Terminowość",
+            "second_title": ""
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Marketing i logistyka tworzą nierozłączną parę. Przekonaliśmy się o tym wiele razy, pomagając naszym klientom w sprawach, które wykraczały poza standardowy zakres usług. Mamy doświadczenie w logistyce materiałów promocyjnych, dlatego stawiamy na elastyczność. Możemy przechować nagrody konkursowe, gadżety reklamowe czy kilkanaście palet świeżo wydrukowanych katalogów lub folderów reklamowych w suchym i bezpiecznym miejscu. Wiemy, jaki powinien być dobry magazyn – do naszego dojedzie tir, dotrą także kurierzy. Dysponujemy niezbędnym sprzętem do przetransportowania palet z towarem.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/nsplsh_5a4b427a6c6966676b6777_mv2_d_5184_3888_s_4_2.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Konfekcjonowanie i wysyłka pod wskazany adres to nasze standardowe usługi. Wiemy co to dobra organizacja, dlatego wysyłka nawet kilkuset paczek w jednym czasie do różnych miejsc nie stanowi dla nas problemu. Jeśli nie masz przestrzeni, energii albo ludzi, skorzystaj z naszego wsparcia logistycznego. Niestandardowe prośby? Z przyjemnością!</p><p>Prawie wszystko dopięte na ostatni guzik – event firmowy ogarnięty, katalog produktowy zlecony do druku, zainteresowanie konkursem rośnie lawinowo. Mógłbyś już świętować zawodowy sukces, gdyby nie to, że nagle stoisz pod ścianą. Bo gadżety na event przyjadą jednak szybciej i trzeba gdzieś je ulokować, bo kolportaż materiałów promocyjnych ma się opóźnić i musisz przechować kilka palet nowych katalogów, bo do wysyłki nagród konkursowych trzeba zaangażować sztab ludzi, których nie masz. Wsparcie logistyczne – potrzebujesz go bardziej niż kolejnego kubka kawy.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/nsplsh_7652633042386c44735834_mv2_d_4896_3264_s_4_2.webp"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": "Magazynowanie i wysyłka to nasza specjalność.",
+        "link_text": "Zobacz projekt dla Ogrodów Natury!",
+        "portfolio_url": "/pl/case/wsparcie-logistyczne-dla-ogrodow-natury",
+        "left": "<h4>Potrzebujesz wsparcia logistycznego?</h4><h3><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3>"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Komunikacja kryzysowa",
+    "slug": "komunikacja-kryzysowa",
+    "is_enabled": 1,
+    "short_description": "<p>Kryzys może wystąpić w każdej, nawet najlepiej prosperującej organizacji. Dlatego w myśl zasady \"przezorny zawsze ubezpieczony\", warto być odpowiednio przygotowanym na jego nadejście.</p>",
+    "card_image": "assets/images/services/komunikacja-kryzysowa.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "assets/media/filmy/social media.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/profesionals.svg",
+            "first_title": "Doświadczeni",
+            "second_title": "specjaliści"
+          },
+          {
+            "image": "assets/media/ikony/gear.svg",
+            "first_title": "Odpowiedni",
+            "second_title": "dobór narzędzi"
+          },
+          {
+            "image": "assets/media/ikony/evolution.svg",
+            "first_title": "Ewaluacja",
+            "second_title": "działań"
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><p>Kryzys może wystąpić w każdej, nawet najlepiej prosperującej organizacji. Dlatego w myśl zasady \"przezorny zawsze ubezpieczony\", warto być odpowiednio przygotowanym na jego nadejście. Istotnym elementem jest opracowanie planu. Pomoże on jak najszybciej uporać się z negatywnymi skutkami nagłych zdarzeń. Bardzo istotnym elementem działań w trudnym dla organizacji czasie jest komunikacja kryzysowa. Umiejętnie poprowadzona może ocalić wizerunek i wartość marki, budowanej często latami.</p><div data-mesh-id=\"comp-knrp8vllinlineContent\" data-testid=\"inline-content\"><div data-mesh-id=\"comp-knrp8vllinlineContent-gridContainer\" data-testid=\"mesh-container-content\"><div data-angle=\"0\" data-angle-style-location=\"style\" data-screen-in-hide=\"done\" data-testid=\"richTextElement\"><br></div></div></div></div>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_8e406768d2cf4125afb621ebeb8c236b_mv2.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Bardzo pomocna w nagłych sytuacjach jest Księga Komunikacji Kryzysowej (crisis manual). Jest to wewnętrzny dokument, wskazujący modelową ścieżkę postępowania w sytuacjach kryzysowych. Docenisz ją, gdy Twoja firma stanie w obliczu realnego zagrożenia. Dzięki niej zapanujesz nad chaosem w pierwszych godzinach kryzysu. Zwykle trzeba działać pod presją czasu oraz naciskiem mediów. Określenie i spisanie zasad komunikacji ułatwi pracownikom firmy reagowanie na zmieniającą się sytuację kryzysową.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_4d70d700a25e4a53a48198b913e10c07_mv2.webp"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Jeśli Twoja firma nie posiada jeszcze crisis manualu – warto czym prędzej to nadrobić! Nie wiesz jak się za to zabrać? Pomożemy! <strong>Opracujemy Księgę Zarządzania Kryzysowego</strong>, która z jednej strony pozwoli sprawnie wdrożyć odpowiednie procedury na wypadek wystąpienia nagłych zdarzeń, z drugiej zaś – zwiększy świadomość potencjalnych zagrożeń.</p>",
+        "image": "assets/media/Zdjecia do kompetencji/18231c_77eb12b1d66f44eaa6982a394e3cd0c8_mv2.webp"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": "Chcesz wiedzieć, jak to robimy?",
+        "link_text": "Sprawdź nasze działania!",
+        "portfolio_url": "/case/komunikacja-kryzysowa",
+        "left": "<div data-mesh-id=\"comp-knrp8vmpinlineContent\" data-testid=\"inline-content\"><div data-mesh-id=\"comp-knrp8vmpinlineContent-gridContainer\" data-testid=\"mesh-container-content\"><div data-testid=\"richTextElement\"><h4>Chcesz przygotować się na sytuacje kryzysowe?</h4><h3><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3></div></div></div>"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Employer branding",
+    "slug": "employer-branding",
+    "is_enabled": 1,
+    "short_description": "<p>W PR, employer branding odgrywa kluczową rolę w komunikowaniu wartości i korzyści związanych z pracą w danej firmie.</p>",
+    "card_image": "assets/images/services/employer-branding.webp",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "https://www.bvmg.pl/storage/app/media/filmy/eb.mp4",
+        "points": []
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Jesteśmy specjalistami w tworzeniu strategii budowania pozytywnego wizerunku pracodawcy w celu przyciągania i zatrzymywania najlepszych talentów. &nbsp; &nbsp; W PR, <strong>employer branding</strong> odgrywa kluczową rolę w komunikowaniu wartości i korzyści związanych z pracą w danej firmie.</p><p>Nasza oferta w zakresie <strong>employer brandingu</strong> opiera się na szerokim spektrum działań. Mają one na celu nie tylko zwiększenie rozpoznawalności marki pracodawcy, ale także kreowanie pozytywnego wizerunku firmy w oczach obecnych i potencjalnych pracowników.</p><p><br></p>",
+        "image": "https://www.bvmg.pl/storage/app/media/employer%20branding_m.jpg"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Koncentrujemy się na komunikacji zewnętrznej, aby promować firmę jako pracodawcę wartościowego. Może to obejmować publikowanie artykułów prasowych, udział w branżowych wydarzeniach, współpracę z influencerami.&nbsp;</p><p>Wspieramy <strong>employer branding</strong> poprzez skuteczną komunikację wewnętrzną. Ważne jest, aby pracownicy mieli jasne informacje na temat wartości, celów i możliwości rozwoju w firmie. PR może tworzyć newslettery, intranety, spotkania i wydarzenia, które angażują pracowników i budują więź z firmą.</p>",
+        "image": "https://www.bvmg.pl/storage/app/media/kompetencje/EB.jpg"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": " Zastanawiasz się, jak to wygląda w praktyce?",
+        "link_text": "Zobacz nasz projekt",
+        "portfolio_url": "/case/employer-branding",
+        "left": "<div data-testid=\"richTextElement\"><h4 style=\"text-align: left;\">Jesteś zainteresowany employer brandingiem dla swojej firmy?</h4><h3 style=\"text-align: left;\"><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3></div>"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Działania CSR",
+    "slug": "dzialania-csr",
+    "is_enabled": 1,
+    "short_description": "<p>&nbsp;</p>",
+    "card_image": "assets/images/services/dzialania-csr.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "https://www.bvmg.pl/storage/app/media/filmy/csr.mp4",
+        "points": []
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p style=\"text-align: left;\">Jako agencja, możemy pomóc naszym Klientom w realizacji działań CSR poprzez opracowanie spójnej strategii, która uwzględnia cele biznesowe Klienta, potrzeby społeczności lokalnej i zrównoważony rozwój.&nbsp;</p><p style=\"text-align: left;\">Pomagamy w komunikacji i promocji działań CSR Klienta, aby zwiększyć świadomość i zaangażowanie zarówno wśród pracowników, jak i klientów oraz społeczności lokalnej.</p><pre style=\"text-align: left;\">\r\n</pre>",
+        "image": "https://www.bvmg.pl/storage/app/media/Zdjecia%20do%20kompetencji/tekst-csr3.jpg"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p style=\"text-align: left;\">Wspieramy w nawiązywaniu partnerstw z organizacjami pozarządowymi i innymi instytucjami, które mają podobne cele i wartości, aby wzmocnić działania CSR i osiągnąć większy wpływ społeczny.</p><p style=\"text-align: left;\"><br>Współpracując z naszą agencją, nasi Klienci mogą skutecznie wdrożyć i promować swoje działania CSR, przyczyniając się do pozytywnych zmian społecznych i środowiskowych, jednocześnie budując silny wizerunek firmy.</p><p style=\"text-align: left;\"><br></p>",
+        "image": "https://www.bvmg.pl/storage/app/media/Zdjecia%20do%20kompetencji/cropped-images/CSR-2-0-0-0-0-1688566080.jpg"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": ".",
+        "link_text": ".",
+        "portfolio_url": "",
+        "left": "<div data-testid=\"richTextElement\"><h4 style=\"text-align: left;\">Jesteś zainteresowany wsparciem przy projekcie CSR?</h4><h3 style=\"text-align: left;\"><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3></div>"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Tworzenie stron WWW",
+    "slug": "projektowanie-i-budowa-stron-www",
+    "is_enabled": 1,
+    "short_description": "<p>Co by nie mówić, dobrze zaprojektowana, zoptymalizowana i wdrożona strona internetowa to najlepsza wizytówka biznesu i podstawa komunikacji z klientami.</p>",
+    "card_image": "assets/images/services/tworzenie-stron-www.jpg",
+    "card_image_url": "",
+    "builder": [
+      {
+        "content_group": "service_features",
+        "title": "Service features",
+        "video": "https://www.bvmg.pl/storage/app/media/filmy/Web%20_%20development%20_%20tworzenie%20_%20stron%20_%20www%20_%20BVMG%20_%20Agencja%20_%20PR.mp4",
+        "points": [
+          {
+            "image": "assets/media/ikony/360.svg",
+            "first_title": "",
+            "second_title": "Kompleksowość"
+          },
+          {
+            "image": "https://www.bvmg.pl/storage/app/media/ikony/ux5.svg",
+            "first_title": "",
+            "second_title": "UX | UI Design"
+          },
+          {
+            "image": "https://www.bvmg.pl/storage/app/media/ikony/respon2.svg",
+            "first_title": "",
+            "second_title": "Responsywność"
+          }
+        ]
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Co by nie mówić, dobrze zaprojektowana, zoptymalizowana i wdrożona strona internetowa to najlepsza wizytówka biznesu oraz podstawa komunikacji z klientami. Buduje wizerunek i zaufanie, wieńczy kampanie marketingowe, a kiedy trzeba – sprzedaje i pozyskuje pracowników. Dla wielu osób jest miejscem pierwszego kontaktu z firmą czy marką, dlatego warto zadbać o to, aby była przejrzysta, prezentowała to, czego użytkownik szuka, a także zachęcała do ponownych odwiedzin. Dlatego tworzenie strony www warto powierzyć specjalistom.</p>",
+        "image": "https://www.bvmg.pl/storage/app/media/Zdjecia%20do%20kompetencji/Tworzenie%20stron%20www/IMG_20231106_114105599_2.jpg"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Budowa profesjonalnych, unikatowych stron internetowych to wieloetapowy proces, który wymaga współpracy różnych specjalistów: web designera, copywritera, grafika oraz programisty (web developera), a niekiedy także fotografa czy tłumacza natywnego. Mamy ich w swoim zespole, dzięki czemu możemy kompleksowo obsługiwać naszych Klientów.</p>",
+        "image": "https://www.bvmg.pl/storage/app/media/ikony/Tworzenie%20_%20stron%20_%20internetowych%20_%20www%20_%20BVMG%20_%20Agnecja%20_%20Marketingowa.jpg"
+      },
+      {
+        "content_group": "service_split_content",
+        "title": "Service content with image",
+        "content": "<p>Projektujemy zgodnie z identyfikacją wizualną Klienta i jego oczekiwaniami. Bierzemy pod uwagę nie tylko aktualne, lecz także przyszłe potrzeby jego biznesu, dlatego stosujemy rozwiązania pozwalające na rozwój strony w przyszłości. Przy tym wszystkim nie zapominamy o użytkownikach, dlatego dużą wagę przykładamy do ich doświadczeń, a nasze realizacje są zgodne z zasadami <strong>User Experience (UX design)</strong> i <strong>User Interface (UI design)</strong>. Ponadto, wszystkie nasze strony są responsywne i dobrze wyświetlają się na ekranach różnej rozdzielczości – w czasach, kiedy ilość wejść na strony z urządzeń mobilnych (smartfon, tablet) zaczyna przewyższać ilość jej wyświetleń na urządzeniach desktopowych (komputer PC, laptop), to absolutny <em>must have</em>.</p>",
+        "image": "https://www.bvmg.pl/storage/app/media/Zdjecia%20do%20kompetencji/Tworzenie%20stron%20www/cropped-images/monitory1-0-114-1207-1211-1699964406.jpg"
+      },
+      {
+        "content_group": "service_portfolio_link",
+        "title": "Chcesz zobaczyć efekty naszej pracy?",
+        "link_text": "Zobacz nasz projekt dla marki Good Karma!",
+        "portfolio_url": "https://www.bvmg.pl/usluga/projektowanie-i-budowa-stron-www",
+        "left": "<div data-testid=\"richTextElement\"><h4>Potrzebujesz nowej strony internetowej? Przydałby Ci się skuteczny landing page?</h4><h3><a href=\"/kontakt\">Kliknij i zapytaj o ofertę!</a></h3></div>"
+      }
+    ]
+  }
+]

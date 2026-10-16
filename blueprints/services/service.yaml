@@ -1,0 +1,46 @@
+uuid: bde1d092-7eb2-40c0-9caf-c3b5e236283d
+handle: Services\Service
+type: structure
+name: Service
+drafts: true
+multisite: sync
+
+primaryNavigation:
+    label: Services
+    icon: ph ph-call-bell
+    order: 140
+
+navigation:
+    icon: ph ph-call-bell
+    parent: Services\Service
+    order: 10
+    label: Service
+
+fields:
+    short_description:
+        label: Short description
+        type: richeditor
+        tab: General
+    card_image_media:
+        label: Card image (media library)
+        type: mediafinder
+        mode: image
+        span: full
+        tab: Media
+        commentAbove: Optional. Select an image from the media library for the service card.
+    card_image:
+        label: Card image (theme path)
+        type: text
+        span: left
+        tab: Media
+        commentAbove: Path to the card image in the theme assets.
+    card_image_url:
+        label: Card image URL
+        type: text
+        span: right
+        tab: Media
+        commentAbove: Optional external URL for the service card image.
+    builder:
+        label: Content
+        type: mixin
+        source: Content\Builder

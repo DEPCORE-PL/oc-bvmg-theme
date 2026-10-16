@@ -1,0 +1,31 @@
+uuid: 698afed6-70f1-47dd-9dcf-dc2a0f903ff2
+handle: Content\Page
+type: structure
+name: Pages
+drafts: true
+multisite: sync
+pagefinder: item
+
+primaryNavigation:
+    label: Content
+    icon: ph ph-cards
+    iconSvg: modules/tailor/assets/images/tailor-icon.svg
+    order: 140
+
+navigation:
+    icon: ph ph-cards
+    parent: Content\Page
+    order: 1
+
+customMessages:
+    buttonCreate: New page
+
+groups:
+    builder:
+        name: Dynamic Page
+        fields:
+            builder:
+                tab: Edit
+                type: mixin
+                name: Builder
+                source: Content\Builder

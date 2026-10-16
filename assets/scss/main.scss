@@ -1,0 +1,24 @@
+@import 'variables/variables';
+
+@import 'common/animations';
+@import 'common/mixins';
+@import 'common/extends';
+@import 'common/normalize';
+@import 'common/global';
+@import 'common/loader';
+@import 'common/typography';
+@import 'common/leaflet';
+
+@import 'components/forms';
+@import 'components/navigation';
+@import 'components/media';
+@import 'components/tiny-slider';
+@import 'components/tooltip';
+@import 'components/blog';
+
+@import 'layouts/main';
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/hero';
+
+.bvmg-social-live{position:fixed;right:20px;top:40%;z-index:9998;display:flex;flex-direction:column;gap:5px}.bvmg-social-live a,.bvmg-social-live img{display:block;width:59px;height:59px}.bvmg-social-live a{padding:0}.bvmg-social-live img{object-fit:cover}@media(max-width:767px){.bvmg-social-live{display:none}}

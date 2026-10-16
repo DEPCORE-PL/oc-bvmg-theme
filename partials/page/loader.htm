@@ -1,0 +1,28 @@
+<div class="core_loader core_loader-overlay -show -front">
+	<div class="loader_image"><svg class=logo width="292" height="74" viewBox="0 0 146 37"><use xlink:href='#logo'></use></svg></div>
+</div>
+<script>
+(function () {
+    var loader = document.querySelector('.core_loader');
+    if (!loader) return;
+
+    function recoverStuckLoader() {
+        if (!loader.classList.contains('-show')) return;
+        loader.classList.remove('-show');
+        window.setTimeout(function () {
+            loader.classList.remove('-front');
+            loader.classList.add('-removed');
+        }, 500);
+    }
+
+    function onReady() {
+        window.setTimeout(recoverStuckLoader, 1800);
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', onReady, { once: true });
+    } else {
+        onReady();
+    }
+    window.setTimeout(recoverStuckLoader, 5000);
+})();
+</script>

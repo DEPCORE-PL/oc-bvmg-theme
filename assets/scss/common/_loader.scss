@@ -1,0 +1,83 @@
+.core_loader-overlay {
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 1s .3s;
+    transform-origin: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-delay: 1s;
+    z-index: -1;
+
+    svg path {
+        fill: inherit;
+    }
+
+    use {
+        fill: var(--brand-blue)
+    }
+
+    &.-removed {
+        transition-delay: 0s;
+        opacity: 0;
+        z-index: -1;
+
+    }
+
+    &.-show {
+        pointer-events: auto;
+        opacity: 1;
+        transition-duration: .5s;
+    }
+
+    &.-front {
+        z-index: 9999;
+
+        .loader_image svg {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    .loader_image {
+        max-width: 500px;
+        overflow: hidden;
+        height: auto;
+
+        svg {
+            width: 100%;
+            transition: opacity 0.25s, transform 1s;
+            transform: scale(0);
+            opacity: 0;
+            will-change: opacity, transform;
+        }
+
+        path{
+            will-change: stroke-dasharray, stroke-dashoffset;
+            stroke:#fff;
+            stroke-linecap: square;
+            fill: var(--brand-blue);
+            stroke-width:0;
+            animation: write 2.5s ease-out, fillIn 1s cubic-bezier(0,.5,1,.5);
+            animation-delay: 1s, 3s;
+            animation-iteration-count:1;
+            animation-direction: alternate;
+            color: #fff;
+            animation-fill-mode:both;
+            animation-play-state: paused;
+
+            &.orange{
+                color: #E95E1D;
+                stroke: currentColor;
+            }
+        }
+    }
+}
+

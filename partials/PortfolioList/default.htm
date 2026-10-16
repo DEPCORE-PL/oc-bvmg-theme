@@ -1,0 +1,9 @@
+<div class="services-list grid-third bvmg-portfolio-grid">
+    {% for portfolio in __SELF__.portfolioItems %}
+        {% if this.site.locale != 'en' or 'en' in portfolio.getTranslatedLocales('title') %}
+            <div class="single-service">
+                {% partial 'PortfolioList::single-portfolio' portfolio=portfolio %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>

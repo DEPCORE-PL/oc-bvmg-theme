@@ -1,0 +1,8 @@
+{% set posts = blogPosts.posts %}
+<div>
+{% for post in posts %}
+    {% if this.site.locale != 'en' or 'en' in post.getTranslatedLocales('title') %}
+        {% partial 'blog/single-post-list' post=post %}
+    {% endif %}
+{% endfor %}
+</div>

@@ -1,0 +1,16 @@
+{% set post = blogPost.post %}
+
+<section class="container section entry-content">
+	{% if post.featured_images.count  %}
+		{% set image = post.featured_images.first %}
+		<img src="{{ image.path }}" alt="{{ image.title }}">
+	{% endif %}
+	<article>
+	    <h2 >{{ post.title }}</h2>
+	    {{ post.content|md }}
+		{% partial 'assets/share'  %}
+	</article>
+
+</section>
+
+{% partial 'blog/related' %}

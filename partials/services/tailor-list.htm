@@ -1,0 +1,16 @@
+<div class="services-list grid-third">
+    {% for service in services %}
+        <div class="single-service">
+            {% if service.card_image_media %}
+                <img src="{{ service.card_image_media|media }}" alt="{{ service.title }}">
+            {% elseif service.card_image %}
+                <img src="{{ ('/' ~ service.card_image)|theme }}" alt="{{ service.title }}">
+            {% elseif service.card_image_url %}
+                <img src="{{ service.card_image_url }}" alt="{{ service.title }}">
+            {% endif %}
+            <div class="service-meta">
+                <h3><a href="{{ 'usluga'|page({ slug: service.slug }) }}">{{ service.title }}</a></h3>
+            </div>
+        </div>
+    {% endfor %}
+</div>

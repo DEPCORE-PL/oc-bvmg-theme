@@ -1,0 +1,87 @@
+@keyframes chevron-in {
+    // 40% {
+    //     clip-path: circle(50% at 0 50%);
+    // }
+
+    100% {
+        clip-path: circle(111.6% at 0 50%);
+    }
+}
+@keyframes chevron-out {
+    0% {
+        clip-path: circle(111.6% at 0 50%);
+    }
+    // 60% {
+    //     clip-path: circle(50% at 0 50%);
+    // }
+    100% {
+        clip-path:circle(0 at 90% 95%);
+    }
+}
+
+@keyframes chevron-transition {
+
+    0% {
+        clip-path: polygon(0% 0%, 100% 0px, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path:  polygon(100% 0, 100% 0, 100% 100%, 100% 100%);;
+    }
+
+}
+
+@keyframes start{
+  from{
+    transform:translateX(-40%);
+  }
+  to{
+    transform: translateX(0)
+  }
+}
+@keyframes write{
+  to{
+    stroke-dashoffset:0;
+  }
+}
+@keyframes fillIn{
+  to{
+    fill:currentColor;
+  }
+}
+
+
+.transition-fade {
+  transition: 1s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+.split .letter{
+  opacity: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+
+  .in-view & {
+    opacity: 1;
+  }
+}
+
+.fade-in-zoom {
+  transform:scale(1.3);
+  opacity: 0;
+  transition: opacity 2s ease-out, transform 800ms ease-out;
+
+  .in-view &,&.in-view {
+    opacity: 1;
+    transform:scale(1);
+  }
+}

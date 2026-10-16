@@ -1,0 +1,39 @@
+[section copyrightMenu]
+handle = "Site\Menu"
+identifier = "slug"
+value = "copyright"
+
+[section servicesMenu]
+handle = "Site\Menu"
+identifier = "slug"
+value = "footer-services"
+
+[section sitemapMenu]
+handle = "Site\Menu"
+identifier = "slug"
+value = "footer-sitemap"
+
+[section portfolioMenu]
+handle = "Site\Menu"
+identifier = "slug"
+value = "footer-portfolio"
+==
+<footer class="site-footer container">
+    <div class="grid-four">
+        <nav class="muted-nav">{% partial 'menus/static-like' items=servicesMenu.item %}</nav>
+        <nav class="muted-nav">{% partial 'menus/static-like' items=portfolioMenu.item %}</nav>
+        <nav class="muted-nav"></nav>
+        <nav class="muted-nav last">{% partial 'menus/static-like' items=sitemapMenu.item %}</nav>
+    </div>
+    <div class="copyright">
+        <p>&copy; {{ (siteSettings.copyright_text ?: 'Agencja PR Buena Vista Media Group, Wrocław 2026')|trans }}</p>
+        <nav>
+            <ul>
+                <li role="presentation">
+                    <a href="{{ 'kontakt'|page }}">{{ siteSettings.footer_contact ?: 'Wrocław, Wyspa Słodowa 7 lok. 306, tel. 505 933 916' }}</a>
+                    {% partial 'menus/static-like' items=copyrightMenu.item %}
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>

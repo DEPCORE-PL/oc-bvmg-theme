@@ -1,0 +1,45 @@
+url = "/blog/:page?"
+layout = "default"
+title = "Blog"
+is_hidden = 0
+meta_title = "Blog | Agencja PR | BVMG | Public Relations | Wrocław"
+meta_description = "Zapraszamy na naszego bloga, na którym pragniemy się dzielić wiedzą z zakresu public relations."
+robot_index = "index"
+robot_follow = "follow"
+seoOptionsMetaTitle = "Blog | Agencja PR | BVMG | Public Relations | Wrocław"
+seoOptionsMetaDescription = "Zapraszamy na naszego bloga, na którym pragniemy się dzielić wiedzą z zakresu public relations."
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+seoOptionsModelParams = "page:page"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 999
+noPostsMessage = "Nie znaleziono postów"
+sortOrder = "published_at desc"
+categoryPage = "kategoria"
+postPage = "wpis"
+[translatable]
+locales[en][meta_title] = "Blog | Buena Vista Media Group"
+locales[en][meta_description] = "Insights into PR, communications, marketing and brand building."
+locales[en][title] = "Blog"
+==
+{% put hero %}
+    <div class="hero parallax-header">
+        <div class=" container">
+            <div class="title"><h1 class="page-title">{{"O KOMUNIKACJI i nie tylko"|trans}}</h1></div>
+        </div>
+        <div class="parallax-container hero-image">
+            <img src="{{'assets/images/blogimage.webp'|theme}}" alt="">
+        </div>
+    </div>
+{% endput%}
+
+<section class="section  container">
+	<article class='blog-list'>
+        {% component 'blogPosts' %}
+    </article>
+</section>

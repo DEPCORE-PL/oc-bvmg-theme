@@ -1,0 +1,5 @@
+<div class="section container">
+    {% if section.heading %}<h2 class="page-title">{{ section.heading }}</h2>{% endif %}
+    <div class="center">{{ section.content|raw }}</div>
+    {% component 'emptyForm' %}
+</div>

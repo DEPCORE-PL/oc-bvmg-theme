@@ -1,0 +1,111 @@
+uuid: 84366e55-2e28-4ac9-b5ce-ee6fdfa6dc1e
+handle: Content\Global
+type: global
+name: Settings
+multisite: true
+navigation:
+  parent: Content\Page
+  icon: ph ph-gear
+  order: 10
+  label: Settings
+fields:
+  website_name:
+    label: Company Name
+    type: text
+    tab: General
+    default: Buena Vista Media Group
+
+  notice_enabled:
+    label: Show warning notice
+    type: switch
+    tab: General
+    default: true
+  notice_text:
+    label: Warning notice text
+    type: text
+    tab: General
+    default: 'Uwaga na fałszywe mejle podszywające się pod BVMG! zobacz więcej →'
+  notice_url:
+    label: Warning notice URL
+    type: text
+    tab: General
+    default: 'https://www.facebook.com/buenavistamediagroup/posts/pfbid02pRnqA9uJo7G7Q3dwAhfeMHEePj1t4R5w8PGgmqt1hR2PW31M667CEdqdmA85NANfl'
+  footer_contact:
+    label: Footer contact line
+    type: text
+    tab: General
+    default: Wrocław, Wyspa Słodowa 7 lok. 306, tel. 505 933 916
+  copyright_text:
+    label: Copyright
+    type: text
+    tab: General
+    default: Agencja PR Buena Vista Media Group, Wrocław 2026
+  address:
+    label: Office Address
+    type: textarea
+    size: small
+    tab: Contact
+    default: Concordia Design\nWyspa Słodowa 7 lok. 306\n50-266 Wrocław
+  main_email:
+    label: Main email
+    type: text
+    span: row
+    cssClass: col-md-6
+    tab: Contact
+    default: info@bvmg.pl
+  main_phone:
+    label: Main phone
+    type: text
+    span: row
+    cssClass: col-md-6
+    tab: Contact
+    default: +48 505 933 916
+  facebook_url:
+    label: Facebook URL
+    type: text
+    tab: Social
+    default: https://pl-pl.facebook.com/buenavistamediagroup/
+  youtube_url:
+    label: YouTube URL
+    type: text
+    tab: Social
+    default: https://www.youtube.com/@buenavistamediagroup8968/videos
+  linkedin_url:
+    label: LinkedIn URL
+    type: text
+    tab: Social
+    default: https://www.linkedin.com/company/buena-vista-media-group?originalSubdomain=pl
+  instagram_url:
+    label: Instagram URL
+    type: text
+    tab: Social
+  twitter_url:
+    label: Twitter URL
+    type: text
+    tab: Social
+  brand_color:
+    label: Brand color
+    type: colorpicker
+    tab: Technical
+    default: '#A71D4F'
+  google_maps_api:
+    label: Google Maps API
+    type: text
+    tab: Technical
+  google_site_verification:
+    label: Google site verification
+    type: text
+    tab: Technical
+  head_meta:
+    label: Additional head meta
+    type: codeeditor
+    tab: Technical
+  head_scripts:
+    label: Additional head scripts
+    type: codeeditor
+    tab: Technical
+  analytics:
+    label: Google Analytics ID
+    type: text
+    tab: Technical
+    default: UA-78974480-1

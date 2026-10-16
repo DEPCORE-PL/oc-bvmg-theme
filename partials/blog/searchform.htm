@@ -1,0 +1,19 @@
+[viewBag]
+
+[searchForm]
+resultPage = "wyniki-wyszukiwania"
+categoryFilter = 0
+==
+<form class="form-inline" method="GET" action="{{ searchForm.resultPage|page }}">
+    <input type="text" name="search" class="form-control" placeholder="Wyszukaj na blogu, wpisz zapytanie">
+
+    {% if searchForm.categoryFilter %}
+        <select name="cat[]" class="form-control">
+        {% for key,cat in searchForm.categories %}
+            <option value="{{ key }}">{{ cat }}</option>
+        {% endfor %}
+        </select>
+    {% endif %}
+
+    <button class="btn btn btn-primary" type="submit">{{ 'Szukaj'|trans }}</button>
+</form>

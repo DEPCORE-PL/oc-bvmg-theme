@@ -1,0 +1,10 @@
+{% if related %}
+	<section class='related container section'>
+	    <h3 style='margin-bottom: 2rem;'>{{ 'Zobacz również'|trans }}</h3>
+	    <div class="grid-third grid-gap">
+		    {% for post in related %}
+		        {% partial 'blog/single-post-list' post=post %}
+		    {% endfor %}
+	    </div>
+	</section>
+{% endif %}

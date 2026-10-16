@@ -1,0 +1,32 @@
+url = "/o-nas"
+layout = "default"
+title = "o nas"
+is_hidden = 0
+meta_title = "Agencja PR | Public Relations | BVMG | Wrocław"
+meta_description = "Działamy w branży public relations. Projektujemy i realizujemy nowoczesną komunikację. Jesteśmy doświadczonym partnerem firm poszukujących profesjonalnego wsparcia w budowaniu dobrych relacji z otoczeniem."
+seoOptionsMetaTitle = "Agencja PR | Public Relations | BVMG | Wrocław"
+seoOptionsEnabledInSitemap = "true"
+seoOptionsUseUpdatedAt = "true"
+seoOptionsRobotIndex = "index"
+seoOptionsRobotFollow = "follow"
+seoOptionsOgCard = "summary-large-image"
+seoOptionsMetaDescription = "Działamy w branży public relations. Projektujemy i realizujemy nowoczesną komunikację. Jesteśmy doświadczonym partnerem firm poszukujących profesjonalnego wsparcia w budowaniu dobrych relacji z otoczeniem."
+
+[testimonialsList]
+show_as = "list"
+max_items = 15
+show_client_logo = 0
+per_page = 10
+
+
+[section pageContent]
+handle = "Content\Page"
+identifier = "slug"
+value = "o-nas"
+[translatable]
+locales[en][meta_title] = "About Us | Buena Vista Media Group"
+locales[en][meta_description] = "Learn more about BVMG, our approach, flexibility and commitment to effective public relations."
+locales[en][url] = "/about-us"
+locales[en][title] = "About Us"
+==
+{% partial 'builder/items' section=pageContent %}

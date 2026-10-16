@@ -1,0 +1,7 @@
+<img src="{{ portfolio.cover.getThumb(362,219,{'mode':'crop'}) }}" alt="">
+<div class="service-meta">
+	<h3>
+		<a href="{{ 'portfolio-item'|page({ slug: portfolio.slug }) }}">{{portfolio.title}}</a></strong>
+	</h3>
+	<a href="{{ 'portfolio-item'|page({ slug: portfolio.slug }) }}" class='button-thin'>{{'więcej o projekcie'|trans}}</a>
+</div>

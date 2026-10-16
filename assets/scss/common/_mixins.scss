@@ -1,0 +1,354 @@
+@mixin shadow() {
+  box-shadow:0 0 24px rgba(0, 0, 0, 0.1), 0 0 7px rgba(0, 0, 0, 0.1), 0 0 3px rgba(0, 0, 0, 0.1)
+}
+
+@mixin round-button($color__bg: $color__brand-secondary) {
+    box-shadow: 0 0 11px rgba(darken($color__bg,20%),0.7);
+    border: 2px solid darken($color__bg,5%);
+    background-color: $color__bg;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    color: $color__brand-white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline:none;
+    font-size: rem(13px);
+    position: fixed;
+
+}
+
+@mixin underline ($color : $color__brand-primary) {
+    position: relative;
+    margin-bottom: 4rem;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 4rem;
+        height: 2px;
+        background-color: $color;
+        position: absolute;
+        bottom: -2rem;
+        left: 50%;
+        margin-left: -2rem;
+    }
+}
+
+
+@mixin doubleCircles() {
+
+  position: relative;
+
+  &:before, &:after {
+    content: '';
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background-color: rgba(#fff,0.5);
+    position: absolute;
+    left: -2rem;
+    margin-top: 0.8rem;
+   }
+
+   &:after {
+     top: 0.7rem;
+   }
+
+}
+
+@mixin container {
+  max-width: $size__container;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: $size__container){
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@mixin before-content {
+  position: relative;
+  > * {
+    position: relative;
+
+  }
+
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    display: block;
+  }
+
+}
+@mixin legacy-pie-clearfix{
+  &::after{
+    clear: both;
+    display: block;
+    content: '';
+ }
+}
+
+@keyframes zoom{
+   from{
+      transform:scale(1);
+      opacity:1;
+      border-width: 3px;
+   }
+   to{
+      transform:scale(1.5);
+      opacity: 0;
+      border-width: 0;
+   }
+}
+
+@mixin animate-border(){
+   outline: none;
+   &:before{
+      content: '';
+      border: 2px solid #000;
+      position: absolute;
+      top: 0;bottom: 0;
+      left: 0;right: 0;
+      border-radius: inherit;
+      animation:zoom 2s infinite;
+   }
+}
+
+
+
+@mixin aft($color__brand-primary){
+	content: "";
+	display: inline-block;
+	background: #8dc63f;
+	height: 2px;
+	position: relative;
+	width: 80px;
+	left: 2rem;
+	top: -0.234567rem;
+}
+@mixin button-reset {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+%button{
+   @include button-reset;
+	color: $color__brand-secondary;
+	background: transparent;
+   border: .2rem solid $color__brand-primary;
+   outline-color: $color__brand-primary;
+   text-decoration: none;
+   text-align: center;
+   text-transform: uppercase;
+   position: relative;
+   display: inline-block;
+   overflow: hidden;
+   font-weight: 600;
+   padding: $spacing/5 $spacing;
+   transition: all .4s ease-out;
+   &:hover{
+      background: $color__brand-primary;
+      color: #fff;
+   }
+}
+
+
+@mixin underline-link($color:#fff, $over:$color__brand_primary){
+   text-decoration: none;
+   position: relative;
+   overflow: hidden;
+   z-index: 9;
+   &::before,&::after{
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      bottom: rem(2px);
+      background-color: $color;
+      z-index: -1;
+   }
+   &::after{
+      width: 0;
+      transition:width 1s;
+      background-color: $over;
+      left: 0;
+      animation-name: underline-out;
+      animation-duration: 0.6s;
+      animation-iteration-count:1;
+      animation-fill-mode:forwards;
+   }
+   &:hover::after{
+      width: 100%;
+      transform: translateX(0);
+      animation-name: underline;
+      animation-duration: 0.6s;
+      animation-iteration-count:1;
+      animation-fill-mode:forwards;
+   }
+}
+
+
+@mixin main-grid(){
+   padding-top: $spacing;
+   padding-bottom: $spacing/3*2;
+   display: grid;
+   grid-template-columns:1fr repeat(2, minmax(auto,$size__grid-main-column)) 1fr;
+   grid-auto-flow: column;
+   @media screen and (max-width: $size__container){
+      padding-left: 2em;
+      padding-right: 2em;
+   }
+}
+
+@mixin hero-layout($spacing){
+   @include main-grid;
+   padding-top: $spacing;
+   padding-bottom: $spacing;
+
+}
+
+
+@mixin contaner-layout($spacing, $color__background-main){
+   padding: $spacing 0 $spacing 0;
+   display: grid;
+   grid-template-columns:1fr minmax(auto, 250px) fit-content(1200px) minmax(auto, 250px) 1fr;
+   background: $color__background-main;
+}
+
+
+@mixin stripe{
+   position: relative;
+   overflow: hidden;
+   &::before,&::after{
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: all .5s;
+      z-index: 1;
+      background: #fff;
+      transform: translateX(102%);
+      transition: width .5s 0s,transform .5s .5s;
+   }
+   &::after{
+      background: #000;
+      width: 0;
+   }
+}
+
+
+@mixin half-background($direction: 'left', $background: $color__brand_primary){
+
+   position: relative;
+   &:before{
+      content: '';
+      position: absolute;
+      background: $background;
+      top: 50%;
+      bottom: 0;
+      display: block;
+      transition: all 1000ms cubic-bezier(0.694, 0, 0.335, 1);
+      transform: translateX(-140px) skew(-10deg);
+      z-index: -1;
+   }
+
+  @if  $direction == 'left' {
+      &:before{
+         left: 0;
+         right: -9999px;
+      }
+  }
+  @if $direction=='right'{
+      &:before{
+         bottom: -40%;
+         left: -9999px;
+         right: -40%;
+      }
+   }
+}
+
+
+$rem-baseline: 16px !default;
+$rem-fallback: false !default;
+$rem-px-only: false !default;
+
+@function rem-separator($list, $separator: false) {
+  @if $separator == "comma" or $separator == "space" {
+    @return append($list, null, $separator);
+  }
+
+  @if function-exists("list-separator") == true {
+    @return list-separator($list);
+  }
+
+  // list-separator polyfill by Hugo Giraudel (https://sass-compatibility.github.io/#list_separator_function)
+  $test-list: ();
+  @each $item in $list {
+    $test-list: append($test-list, $item, space);
+  }
+
+  @return if($test-list == $list, space, comma);
+}
+
+@mixin rem-baseline($zoom: 100%) {
+  font-size: $zoom / 16px * $rem-baseline;
+}
+
+@function rem-convert($to, $values...) {
+  $result: ();
+  $separator: rem-separator($values);
+
+  @each $value in $values {
+    @if type-of($value) == "number" and unit($value) == "rem" and $to == "px" {
+      $result: append($result, $value / 1rem * $rem-baseline + 0px, $separator);
+    } @else if type-of($value) == "number" and unit($value) == "px" and $to == "rem" {
+      $result: append($result, $value / $rem-baseline + 0rem, $separator);
+    } @else if type-of($value) == "list" {
+      $value-separator: rem-separator($value);
+      $value: rem-convert($to, $value...);
+      $value: rem-separator($value, $value-separator);
+      $result: append($result, $value, $separator);
+    } @else {
+      $result: append($result, $value, $separator);
+    }
+  }
+
+  @return if(length($result) == 1, nth($result, 1), $result);
+}
+
+@function rem($values...) {
+  @if $rem-px-only {
+    @return rem-convert(px, $values...);
+  } @else {
+    @return rem-convert(rem, $values...);
+  }
+}
+
+@mixin rem($properties, $values...) {
+  @if type-of($properties) == "map" {
+    @each $property in map-keys($properties) {
+      @include rem($property, map-get($properties, $property));
+    }
+  } @else {
+    @each $property in $properties {
+      @if $rem-fallback or $rem-px-only {
+        #{$property}: rem-convert(px, $values...);
+      }
+      @if not $rem-px-only {
+        #{$property}: rem-convert(rem, $values...);
+      }
+    }
+  }
+}

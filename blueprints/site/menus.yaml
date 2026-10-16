@@ -1,0 +1,47 @@
+uuid: f6dadad7-ce68-4d8e-8a9a-c70c647ef3c1
+handle: Site\Menu
+type: entry
+name: Menu
+drafts: false
+multisite: sync
+
+navigation:
+    parent: Content\Page
+    icon: icon-sitemap
+    order: 10
+    label: Menus
+
+fields:
+    description:
+        label: Menu description
+        type: textarea
+        size: small
+        tab: Description
+
+    item:
+        tab: Items
+        type: repeater
+        span: adaptive
+        maxDepth: 2
+        form:
+            fields:
+                title:
+                    label: Title
+                    type: text
+                    required: true
+                    span: row
+                    cssClass: col-md-4
+                url:
+                    label: URL
+                    type: pagefinder
+                    span: row
+                    cssClass: col-md-4
+                css_class:
+                    type: text
+                    label: Additional CSS class
+                    span: row
+                    cssClass: col-md-4
+                is_header:
+                    type: checkbox
+                    label: Header item
+                    span: full

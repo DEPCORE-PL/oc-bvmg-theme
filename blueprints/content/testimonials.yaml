@@ -1,0 +1,14 @@
+uuid: 192175c8-c2d3-49f2-bb47-bcd8db86a943
+handle: Content\Testimonial
+type: structure
+name: Testimonials
+drafts: false
+multisite: true
+
+navigation:
+    icon: ph ph-star
+    parent: Content\Page
+    label: Testimonial
+    order: 10
+
+fields:

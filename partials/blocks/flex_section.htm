@@ -1,0 +1,11 @@
+<div class="flex">
+    {% for block in section.section %}
+        <div class='block' style='background-image:url({{block.bgimage|media}});--mask-color:{{block.maskcolor}};--bg-color:{{block.bgcolor}}'>
+            <div class="block-content container">
+                {% if block.image %}<img src='{{ block.image|media}}' >{% endif %}
+                {{block.content|raw}}
+            </div>
+        </div>
+    {% endfor %}
+
+</div>

@@ -1,0 +1,396 @@
+uuid: 78650dea-607e-4c63-bde8-2364cb786072
+handle: Content\Builder
+type: mixin
+name: Builder
+
+fields:
+    builder:
+        type: repeater
+        label: Builder
+        displayMode: builder
+        span: adaptive
+        prompt: Add a block
+        groupKeyFrom: content_group
+        groups:
+            hero:
+                name: Hero
+                icon: icon-laptop
+                description: Page hero or inline media section.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    hero:
+                        type: mixin
+                        source: Content\Hero
+
+            section:
+                name: Section
+                icon: icon-columns
+                description: Standard content section.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    section:
+                        type: mixin
+                        source: Content\Section
+
+            section_with_image:
+                name: Section with image
+                icon: icon-th-large
+                description: Content with an image on either side.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Section with image
+                        tab: General
+                        commentAbove: Used for organizational purposes in the builder.
+                    content_on_right:
+                        label: Content on the right
+                        type: checkbox
+                        span: left
+                        tab: General
+                    with_background:
+                        label: Add background
+                        type: checkbox
+                        span: right
+                        tab: General
+                    content:
+                        label: Content
+                        type: richeditor
+                        tab: General
+                    image:
+                        label: Image
+                        type: mediafinder
+                        mode: image
+                        span: left
+                        tab: Media
+                    theme_image:
+                        label: Theme image path
+                        type: text
+                        span: right
+                        tab: Media
+                    buttons:
+                        type: mixin
+                        source: Content\Buttons
+                        tab: General
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            values:
+                name: Values
+                icon: icon-th
+                description: Existing BVMG values section.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Values
+                        tab: General
+                        commentAbove: Used for organizational purposes in the builder.
+                    intro:
+                        label: Intro
+                        type: richeditor
+                        tab: General
+                    items:
+                        label: Items
+                        type: repeater
+                        prompt: Add item
+                        tab: General
+                        form:
+                            fields:
+                                icon:
+                                    label: Icon ID
+                                    type: text
+                                    span: left
+                                content:
+                                    label: Content
+                                    type: richeditor
+                                    span: right
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            services_list:
+                name: Services list
+                icon: icon-list-ul
+                description: Displays all enabled Services\Service records as the BVMG photo grid. Edit card titles and images under Services / Service.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Services list
+                        tab: General
+                    heading:
+                        label: Heading
+                        type: text
+                        tab: General
+                    content:
+                        label: Content
+                        commentAbove: The photo grid is populated from the Services records (Services / Service). Each service has its own title, image and page.
+                        type: richeditor
+                        tab: General
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            service_features:
+                name: Service features
+                icon: icon-th
+                description: Existing BVMG service feature/video block.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Service features
+                        tab: General
+                    video:
+                        label: Video path
+                        type: text
+                        tab: Media
+                    points:
+                        label: Points
+                        type: repeater
+                        prompt: Add point
+                        tab: General
+                        form:
+                            fields:
+                                image:
+                                    label: Icon path
+                                    type: text
+                                    span: left
+                                first_title:
+                                    label: First line
+                                    type: text
+                                    span: right
+                                second_title:
+                                    label: Second line
+                                    type: text
+                                    span: right
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            service_split_content:
+                name: Service content with image
+                icon: icon-th-large
+                description: Existing BVMG service split-content block.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Service content with image
+                        tab: General
+                    content:
+                        label: Content
+                        type: richeditor
+                        tab: General
+                    image:
+                        label: Image path
+                        type: text
+                        tab: Media
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            service_portfolio_link:
+                name: Service portfolio link
+                icon: icon-link
+                description: Existing BVMG service CTA/portfolio block.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Heading
+                        type: text
+                        tab: General
+                    link_text:
+                        label: Link text
+                        type: text
+                        tab: General
+                    portfolio_url:
+                        label: Portfolio URL
+                        type: text
+                        tab: General
+                    left:
+                        label: Contact content
+                        type: richeditor
+                        tab: General
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            portfolio_section:
+                name: Portfolio section
+                icon: icon-briefcase
+                description: Existing portfolio section.
+                titleFrom: title
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Portfolio section
+                    separator:
+                        label: Show separator
+                        type: checkbox
+                        default: true
+
+            client_logos:
+                name: Client logos
+                icon: icon-th-large
+                description: Client logo grid.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Client logos
+                        tab: General
+                    content:
+                        label: Content
+                        type: richeditor
+                        tab: General
+                    logos:
+                        label: Logos
+                        type: repeater
+                        prompt: Add logo
+                        tab: General
+                        form:
+                            fields:
+                                path:
+                                    label: Media path
+                                    type: text
+                    buttons:
+                        type: mixin
+                        source: Content\Buttons
+                        tab: General
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            testimonials:
+                name: Testimonials
+                icon: ph ph-star
+                description: Existing testimonials component.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Testimonials
+                        tab: General
+                    wrapper:
+                        label: Wrapper
+                        type: dropdown
+                        tab: General
+                        options:
+                            testimonials: Testimonials
+                            section: Section
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            contact_form:
+                name: Contact form
+                icon: icon-paper-plane-o
+                description: Existing contact form.
+                titleFrom: title
+                useTabs: true
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Contact form
+                        tab: General
+                    heading:
+                        label: Heading
+                        type: text
+                        tab: General
+                    content:
+                        label: Content
+                        type: richeditor
+                        tab: General
+                    advanced_content:
+                        type: mixin
+                        source: Content\AdvancedFields
+                        label: Advanced Settings
+                        tab: Advanced
+
+            map:
+                name: Map
+                icon: icon-map
+                description: Existing map section.
+                titleFrom: title
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Map
+
+            blog_posts:
+                name: Blog posts
+                icon: icon-pencil
+                description: Existing blog posts component.
+                titleFrom: title
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Blog posts
+
+            brand_clients:
+                name: Client brands
+                icon: icon-building
+                description: Existing client brands component.
+                titleFrom: title
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Client brands
+
+
+            global_section:
+                name: Global Section
+                icon: ph ph-globe-hemisphere-west
+                description: Insert a reusable section.
+                titleFrom: title
+                fields:
+                    title:
+                        label: Title
+                        type: text
+                        default: Global Section
+                    section_reference:
+                        label: Choose global section
+                        type: entries
+                        source: Global\Section
+                        maxItems: 1

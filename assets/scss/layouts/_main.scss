@@ -1,0 +1,21 @@
+/**
+ *  styles shared by all screen sizes without grid support
+ **/
+
+@import 'base';
+
+/**
+ *  styles mobile without grid support
+ **/
+@media screen and (max-width: $size__mobile){
+	@import 'base_mobile';
+	@import 'grid/base_mobile';
+}
+
+@media screen and (max-width: $size__large-tablet){
+
+}
+
+@import 'grid/css_grid_support';
+
+@import 'slides';

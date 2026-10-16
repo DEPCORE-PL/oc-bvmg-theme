@@ -1,0 +1,19 @@
+<div class="icons-section">
+    {% if section.bg %}
+        <div class="parallax-hero video-hero">
+            <video mute loop autoplay>
+                <source src="{{ section.bg|media }}" type="video/mp4">
+            </video>
+        {% endif %}
+            <div class="grid-third points container ">
+                {% for point in section.punkt %}
+                    <div class="icon-box">
+                        <figure><img src="{{ point.image|media }}" alt=""></figure>
+                        <h3>{{point.first_title}} <strong>{{point.second_title}}</strong></h3>
+                    </div>
+                {% endfor %}
+            </div>
+    {% if section.bg %}
+        </div>
+    {% endif %}
+</div>

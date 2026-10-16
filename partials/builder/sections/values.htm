@@ -1,0 +1,15 @@
+{% if section.intro %}
+    {{ section.intro|raw }}
+{% endif %}
+<div class="grid-third competences">
+    {% for item in section.items %}
+        <div class="icon-box">
+            <figure class="icon">
+                <svg viewBox="0 0 512 512"><use xlink:href="#{{ item.icon }}"></use></svg>
+            </figure>
+            <div class="content">
+                {{ item.content|raw }}
+            </div>
+        </div>
+    {% endfor %}
+</div>

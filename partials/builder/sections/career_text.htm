@@ -1,0 +1,8 @@
+
+{% set extraClasses = section.css_classes ? section.css_classes|join(' ') : '' %}
+
+<div class="bvmg-career-block{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>
+    {% if 'career-divider' in (section.css_classes|default([])) and '<hr' not in (section.content|default('')) %}<hr>{% endif %}
+    {{ section.content|raw }}
+    {% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}
+</div>

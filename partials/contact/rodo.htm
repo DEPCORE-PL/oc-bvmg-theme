@@ -1,0 +1,8 @@
+{% set rodo %}
+    {% content 'kontakt/rodo.htm' %}
+{% endset %}
+{% set rodoPelne %}
+    {% content 'kontakt/rodo-pelne.htm' %}
+{% endset %}
+
+<p class="checkbox small"><input type="checkbox" name="rodo" id="rodo" required><label for="rodo" class="legal tooltip" data-tippy-content='{{ rodoPelne }}'>{{rodo}}</label></p>

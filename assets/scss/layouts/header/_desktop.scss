@@ -1,0 +1,30 @@
+.site-header {
+    .inner{
+        display: grid;
+        grid-template-columns: minmax(200px,300px) 1fr;
+        margin-top: 20px;
+    }
+    .menu-in,.menu-out{
+        display: none;
+    }
+    .logo{
+        grid-row: 1/ span 2;
+    }
+
+    .contact{
+        justify-self: flex-end;
+        display: flex;
+
+        > * {
+            margin-left: 1rem;
+        }
+    }
+
+    .toggable{
+        grid-column: 2;
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+
+
+}

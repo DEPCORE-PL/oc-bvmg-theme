@@ -1,0 +1,11 @@
+<div class="portfolio-carousel">
+	{% for portfolio in __SELF__.portfolioItems %}
+            <div class='testimonial-bg' style='background-image: url({{ portfolio.cover.path }});'>
+                <div class="testimonial">
+                    <h3>{{portfolio.title}}</h3>
+                    <article>{{ portfolio.short_description|raw }}</article>
+                    <a href="{{ 'portfolio-item'|page({ slug: portfolio.slug }) }}" class='button-thin'>{{'więcej o projekcie'|trans}}</a>
+                </div>
+            </div>
+	{% endfor %}
+</div>

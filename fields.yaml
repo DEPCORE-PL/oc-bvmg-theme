@@ -1,0 +1,27 @@
+tabs:
+    fields:
+        brand_color:
+            tab: Technical
+            label: Brand color fallback
+            type: colorpicker
+            default: '#A71D4F'
+        google_maps_api:
+            tab: Technical
+            label: Google Maps API fallback
+            type: text
+        google_site_verification:
+            tab: Technical
+            label: Google site verification fallback
+            type: text
+        head_meta:
+            tab: Technical
+            label: Additional head meta fallback
+            type: codeeditor
+        head_scripts:
+            tab: Technical
+            label: Additional head scripts fallback
+            type: codeeditor
+        analytics:
+            tab: Technical
+            label: Google Analytics ID fallback
+            type: text

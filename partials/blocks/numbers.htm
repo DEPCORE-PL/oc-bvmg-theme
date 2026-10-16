@@ -1,0 +1,26 @@
+
+<div class="container section">
+    <div class="grid-third numbers points">
+        {% for number in section.number %}
+            <div class="number-box"
+                 data-aos="zoom-in"
+                 data-aos-anchor-placement="center-center"
+                 data-aos-delay="{{ loop.index * 1000 }}"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease"
+                 data-aos-mirror="false"
+                 data-aos-offset="-200"
+                 data-aos-once="false">
+                <div class="number">
+                    <span style="font-size: {{ number.font_size|default('1') }}em">
+                        {{ number.single_number|number_format(0, ',', ' ') }}
+                    </span>
+                </div>
+                <p class="box-title">
+                    {{ number.first_title }}
+                    <span>{{ number.second_title }}</span>
+                </p>
+            </div>
+        {% endfor %}
+    </div>
+</div>

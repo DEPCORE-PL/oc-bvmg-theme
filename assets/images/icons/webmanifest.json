@@ -1,0 +1,15 @@
+{
+    "name": "DEPCORE",
+    "short_name": "DEPCORE",
+    "icons": [
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#FFD401",
+    "background_color": "#ffffff",
+    "start_url": "https://www.depcore.pl",
+    "display": "standalone"
+}

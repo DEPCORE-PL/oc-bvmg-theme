@@ -1,0 +1,16 @@
+{% set url = 'wpis'|page({ slug: post.slug }) %}
+
+<div class='single-post'>
+    {% if post.featured_images.count >= 1 %}
+        {% set image = post.featured_images.first  %}
+        <figure>
+            <img data-src="{{ image.filename }}" src="{{ image.getThumb(999, 411, {'mode': 'crop'}) }}" alt="{{ image.description }}"/>
+        </figure>
+    {% endif %}
+
+    <article>
+        <p class='blog-meta'><small>{{ post.published_at|date('d F, Y') }}</small></p>
+        <h3 class='post-title'><a href="{{ url }}">{{ post.title|raw }}</a></h3>
+        <p class="excerpt">{{ post.summary|striptags|slice(0,255) }}&hellip;</p>
+        </article>
+</div>
