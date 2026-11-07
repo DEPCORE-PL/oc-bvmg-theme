@@ -1,0 +1,88 @@
+{
+  "o-nas": {
+    "title": "o nas",
+    "meta_title": "Agencja PR | Public Relations | BVMG | Wrocław",
+    "meta_description": "Działamy w branży public relations. Projektujemy i realizujemy nowoczesną komunikację. Jesteśmy doświadczonym partnerem firm poszukujących profesjonalnego wsparcia w budowaniu dobrych relacji z otoczeniem.",
+    "seoOptionsMetaTitle": "Agencja PR | Public Relations | BVMG | Wrocław",
+    "seoOptionsEnabledInSitemap": "true",
+    "seoOptionsUseUpdatedAt": "true",
+    "seoOptionsRobotIndex": "index",
+    "seoOptionsRobotFollow": "follow",
+    "seoOptionsOgCard": "summary-large-image",
+    "seoOptionsMetaDescription": "Działamy w branży public relations. Projektujemy i realizujemy nowoczesną komunikację. Jesteśmy doświadczonym partnerem firm poszukujących profesjonalnego wsparcia w budowaniu dobrych relacji z otoczeniem.",
+    "locales": {
+      "en": {
+        "meta_title": "About Us | Buena Vista Media Group",
+        "meta_description": "Learn more about BVMG, our approach, flexibility and commitment to effective public relations.",
+        "url": "/about-us",
+        "title": "About Us"
+      }
+    }
+  },
+  "kompetencje": {
+    "title": "kompetencje",
+    "robot_index": "index",
+    "robot_follow": "follow",
+    "seoOptionsEnabledInSitemap": "true",
+    "seoOptionsUseUpdatedAt": "true",
+    "seoOptionsRobotIndex": "index",
+    "seoOptionsRobotFollow": "follow",
+    "seoOptionsOgCard": "summary-large-image",
+    "locales": {
+      "en": {
+        "meta_title": "Our Competences | Buena Vista Media Group",
+        "meta_description": "Explore BVMG services: media relations, social media, events, employer branding and more.",
+        "title": "Competences"
+      }
+    }
+  },
+  "kontakt": {
+    "title": "Kontakt",
+    "robot_index": "index",
+    "robot_follow": "follow",
+    "seoOptionsMetaTitle": "Agencja kreatywna | PR | BVMG| Public Relations| Eventy | Social Media",
+    "seoOptionsMetaDescription": "Poszukujesz agencji PR, kreatywnej lub interesują Cię inne działania zgodne z naszą działalnością? Zadzwoń lub napisz.",
+    "seoOptionsEnabledInSitemap": "true",
+    "seoOptionsUseUpdatedAt": "true",
+    "seoOptionsRobotIndex": "index",
+    "seoOptionsRobotFollow": "follow",
+    "seoOptionsOgCard": "summary-large-image",
+    "locales": {
+      "en": {
+        "meta_title": "Contact | Buena Vista Media Group",
+        "meta_description": "Get in touch with the BVMG PR agency in Wrocław.",
+        "title": "Contact"
+      }
+    }
+  },
+  "kariera": {
+    "title": "Kariera",
+    "meta_title": "BVMG | Praca | Staż | Praktyki | Agencja PR | Wrocław",
+    "meta_description": "Chcesz rozwinąć skrzydła w branży PR \u0026 Marketing? Jesteś copywriterem? Media społecznościowe to Twoje naturalne środowisko? Kręci Cię organizacja eventów? Jeżeli na przynajmniej dwa z powyższych pytań możesz odpowiedzieć \"tak\", już dziś sprawdź aktualne oferty pracy/stażu/praktyk i aplikuj!",
+    "seoOptionsMetaTitle": "BVMG | Praca | Staż | Praktyki | Agencja PR | Wrocław",
+    "seoOptionsMetaDescription": "Chcesz rozwinąć skrzydła w branży PR \u0026 Marketing? Jesteś copywriterem? Media społecznościowe to Twoje naturalne środowisko? Kręci Cię organizacja eventów? Jeżeli na przynajmniej dwa z powyższych pytań możesz odpowiedzieć \"tak\", już dziś sprawdź aktualne oferty pracy/stażu/praktyk i aplikuj!",
+    "seoOptionsEnabledInSitemap": "true",
+    "seoOptionsUseUpdatedAt": "true",
+    "seoOptionsRobotIndex": "index",
+    "seoOptionsRobotFollow": "follow",
+    "seoOptionsOgCard": "summary-large-image",
+    "locales": {
+      "en": {
+        "meta_title": "Careers | Buena Vista Media Group",
+        "meta_description": "Discover career opportunities at Buena Vista Media Group.",
+        "title": "Career"
+      }
+    }
+  },
+  "polityka-prywatnosci": {
+    "title": "Polityka prywatności",
+    "locales": {
+      "en": {
+        "meta_title": "Privacy Policy | Buena Vista Media Group",
+        "meta_description": "Information about personal data protection and privacy at BVMG.",
+        "url": "/privacy-policy",
+        "title": "Privacy policy"
+      }
+    }
+  }
+}

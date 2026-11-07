@@ -1,6 +1,34 @@
-
-{% for button in buttons %}
-    {% set link = button.page|link %}
+==
+<?php
+function onStart()
+{
+    $buttons = [];
+    foreach ($this['buttons'] ?? [] as $button) {
+        $button = is_array($button) ? $button : $button->toArray();
+        $address = $button['page'] ?? '';
+        $link = Cms\Models\PageLookupItem::fromSchema($address);
+        if ($link && $link->type === 'cms-page' && isset($this['contentPages'][$link->reference])) {
+            $slug = $this['contentPagePaths'][$link->reference];
+            $button['url'] = $this->pageUrl('tailor/page', ['slug' => $slug], false)
+                . ($link->fragment ? '#' . $link->fragment : '');
+        }
+        else {
+            if ($link && isset($this['contentPages'][$link->cmsPage])) {
+                $link->cms_page = 'tailor/page';
+            }
+            $button['url'] = $link ? $link->resolveItem()->url : '';
+            if ($link && $link->fragment) {
+                $button['url'] .= '#' . $link->fragment;
+            }
+        }
+        $buttons[] = $button;
+    }
+    $this['resolvedButtons'] = $buttons;
+}
+?>
+==
+{% for button in resolvedButtons %}
+    {% set link = button.url %}
     {% if button.style == 'read-more-arrow' %}
         <a href="{{ link }}" class="readmore"> {{ button.title }} <span class="arrow">&rarr;</span></a>
     {% else %}

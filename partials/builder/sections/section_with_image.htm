@@ -1,5 +1,5 @@
 {% set extraClasses = section.css_classes ? section.css_classes|join(' ') : '' %}
-{% if not section.image and not section.theme_image and this.page.id == 'kariera' %}
+{% if not section.image and not section.theme_image and pageContent.slug == 'kariera' %}
 {% partial 'builder/sections/career_text' section=section %}
 {% elseif not section.image and not section.theme_image %}
 <div class="section container{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}>

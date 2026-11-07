@@ -3,12 +3,25 @@ description = "Default layout"
 [global siteSettings]
 handle = "Content\Global"
 ==
+<?php
+function onInit()
+{
+    $this['contentPages'] = json_decode(file_get_contents($this->getTheme()->getPath() . '/meta/content-pages.json'), true);
+    $paths = [];
+    $locale = Site::getActiveSite()->hard_locale;
+    foreach ($this['contentPages'] as $slug => $metadata) {
+        $paths[$slug] = trim($metadata['locales'][$locale]['url'] ?? $slug, '/');
+    }
+    $this['contentPagePaths'] = $paths;
+}
+?>
+==
 <!DOCTYPE html>
 <html lang="{{ this.site.locale ?: 'pl' }}">
     <head>
     {% partial 'meta/head' %}
     </head>
-    <body class='home{% if this.page.id == 'kariera' %} static-page kariera{% elseif this.page.id == 'kontakt' %} kontakt{% elseif this.page.id == 'usluga' %} bvmg-service-page{% endif %}'>
+    <body class='home{% if pageContent.slug == 'kariera' %} static-page kariera{% elseif pageContent.slug == 'kontakt' %} kontakt{% elseif this.page.id == 'usluga' %} bvmg-service-page{% endif %}'>
         {% partial 'page/loader' %}
         {% partial 'assets/icons' %}
         {% partial 'page/header' %}
@@ -20,7 +33,7 @@ handle = "Content\Global"
         {% partial 'page/footer' %}
         <script src="{{ 'assets/js/production-2026-combined.js'|theme }}?v=10.12"></script>
         {% partial 'page/analytics' %}
-    {% if this.page.id == 'kontakt' %}
+    {% if emptyForm %}
         {% framework extras %}
     {% endif %}
     </body>

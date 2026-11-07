@@ -1,4 +1,4 @@
-{% set competenciesFallback = this.page.id == 'kompetencje' and not section.content %}
+{% set competenciesFallback = pageContent.slug == 'kompetencje' and not section.content %}
 {% if section.heading or section.content or competenciesFallback %}
 <section class="section services-section">
     <div class="container center">

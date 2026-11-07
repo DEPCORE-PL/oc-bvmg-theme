@@ -50,7 +50,7 @@
             <label for="sms">{{ content(isEnglish ? 'kontakt/sms.en.htm' : 'kontakt/sms.htm')|striptags|trim }}</label>
         </p>
         <p>
-            <a href="{{ 'polityka-prywatnosci'|page }}">{{ isEnglish ? 'Here' : 'Tutaj' }}</a>
+            <a href="{{ 'tailor/page'|page({ slug: contentPagePaths['polityka-prywatnosci'] }) }}">{{ isEnglish ? 'Here' : 'Tutaj' }}</a>
             {{ isEnglish ? 'you can read our privacy policy' : 'możesz zapoznać się z naszą polityką prywatności' }}
         </p>
     </div>

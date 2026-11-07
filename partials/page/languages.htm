@@ -5,7 +5,12 @@
 <div class="language-switch">
 {% if alternatives|length %}
     {% for site in alternatives %}
-        <span class="link"><a href="{{ site.url }}">{{ site.code|upper }}<img src="{{ ('assets/images/' ~ site.code ~ '.png')|theme }}" alt=""></a></span>
+        {% set destination = site.url %}
+        {% if contentPageSlug and contentPages[contentPageSlug] is defined %}
+            {% set path = contentPages[contentPageSlug].locales[site.hard_locale].url|default('/' ~ contentPageSlug) %}
+            {% set destination = site.base_url|trim('/') ~ path %}
+        {% endif %}
+        <span class="link"><a href="{{ destination }}">{{ site.code|upper }}<img src="{{ ('assets/images/' ~ site.code ~ '.png')|theme }}" alt=""></a></span>
     {% endfor %}
 {% elseif activeCode != 'en' %}
     <span class="link"><a href="{{ url('/en') }}">EN<img src="{{ 'assets/images/en.png'|theme }}" alt=""></a></span>

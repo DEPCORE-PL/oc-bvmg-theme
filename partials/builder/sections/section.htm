@@ -15,5 +15,5 @@
 {% elseif section.style == 'center' %}
 <section class="container{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}><div class="content center">{{ section.content|raw }}{% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}</div></section>
 {% else %}
-<section class="section{% if this.page.id == 'o-nas' %} bvmg-about-copy{% endif %}{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}><div class="container">{{ section.content|raw }}{% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}</div></section>
+<section class="section{% if pageContent.slug == 'o-nas' %} bvmg-about-copy{% endif %}{% if extraClasses %} {{ extraClasses }}{% endif %}"{% if section.html_anchor %} id="{{ section.html_anchor }}"{% endif %}><div class="container">{{ section.content|raw }}{% if section.buttons %}{% partial 'builder/globals/buttons' buttons=section.buttons %}{% endif %}</div></section>
 {% endif %}

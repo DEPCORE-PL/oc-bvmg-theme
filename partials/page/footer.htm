@@ -30,7 +30,7 @@ value = "footer-portfolio"
         <nav>
             <ul>
                 <li role="presentation">
-                    <a href="{{ 'kontakt'|page }}">{{ siteSettings.footer_contact ?: 'Wrocław, Wyspa Słodowa 7 lok. 306, tel. 505 933 916' }}</a>
+                    <a href="{{ 'tailor/page'|page({ slug: contentPagePaths['kontakt'] }) }}">{{ siteSettings.footer_contact ?: 'Wrocław, Wyspa Słodowa 7 lok. 306, tel. 505 933 916' }}</a>
                     {% partial 'menus/static-like' items=copyrightMenu.item %}
                 </li>
             </ul>

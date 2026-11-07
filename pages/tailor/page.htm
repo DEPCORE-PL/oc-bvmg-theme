@@ -1,0 +1,97 @@
+url = "/:slug"
+layout = "default"
+title = "Page"
+is_hidden = 0
+
+[section pageContent]
+handle = "Content\Page"
+identifier = "slug"
+value = "{{ :slug }}"
+isDefault = 1
+
+[collection services]
+handle = "Services\Service"
+sortColumn = "id"
+sortDirection = "asc"
+
+[testimonialsList]
+show_as = "list"
+max_items = 15
+show_client_logo = 0
+per_page = 10
+
+[brandsClientsList]
+limit = 16
+url = "klienci"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+postsPerPage = 999
+noPostsMessage = "Nie znaleziono postów"
+sortOrder = "published_at desc"
+categoryPage = "kategoria"
+postPage = "wpis"
+
+[emptyForm]
+mail_enabled = 0
+mail_subject = "Formularz ze strony BVMG"
+mail_recipients[] = "info@buenavistamediagroup.pl"
+mail_template = "blakejones.magicforms::mail.notification"
+inline_errors = "disabled"
+sanitize_data = "disabled"
+anonymize_ip = "disabled"
+recaptcha_theme = "light"
+recaptcha_type = "image"
+recaptcha_size = "normal"
+emails_date_format = "Y-m-d"
+rules[imie] = "required|min:2|max:100"
+rules[nazwisko] = "required|min:2|max:100"
+rules[email] = "required|email|max:255"
+rules[telefon] = "required|min:6|max:30"
+rules[temat] = "required|in:zapytanie,inne,oferta,wspolpraca"
+rules[wiadomosc] = "required|min:5|max:5000"
+rules[rodo] = "accepted"
+reset_form = 1
+messages_success = "Wiadomość została wysłana. Dziękujemy za kontakt!"
+messages_errors = "Nie udało się wysłać formularza. Sprawdź wprowadzone dane."
+==
+<?php
+function onInit()
+{
+    $slug = $this->param('slug');
+    foreach ($this['contentPagePaths'] as $recordSlug => $publicSlug) {
+        if ($slug === $publicSlug && $slug !== $recordSlug) {
+            $component = $this->page->components['pageContent'];
+            if (!$component->getPrimaryRecordQuery()->where('slug', $slug)->exists()) {
+                $component->setProperty('value', $recordSlug);
+            }
+            break;
+        }
+    }
+}
+
+function onEnd()
+{
+    $record = $this->page->components['pageContent']->getPrimaryRecord();
+    if (!$record) {
+        abort(404);
+    }
+
+    $this['contentPageSlug'] = $record->slug;
+    $metadata = $this['contentPages'][$record->slug] ?? [];
+    $localized = $metadata['locales'][Site::getActiveSite()->hard_locale] ?? [];
+    unset($metadata['locales'], $localized['url']);
+    $this->page->title = $record->title;
+    foreach (array_merge($metadata, $localized) as $name => $value) {
+        $this->page[$name] = $value;
+    }
+
+    $clients = $this->page->components['brandsClientsList'];
+    if ($industry = $clients->industries->first()) {
+        $clients->clients = $industry->clients->take($clients->property('limit'));
+        $clients->title = $industry->name;
+    }
+}
+?>
+==
+{% partial 'builder/items' section=pageContent %}

@@ -21,4 +21,4 @@ locales[en][title] = "Service"
 </div>
 {% endput %}
 {% partial 'builder/items' section=service %}
-{% partial 'buttons/return' link='kompetencje'|page title='kompetencje'|trans %}
+{% partial 'buttons/return' link='tailor/page'|page({ slug: contentPagePaths['kompetencje'] }) title='kompetencje'|trans %}

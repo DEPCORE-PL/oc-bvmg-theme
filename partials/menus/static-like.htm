@@ -1,18 +1,53 @@
+==
+<?php
+function onStart()
+{
+    $items = [];
+    $legacyPages = $this['contentPages'];
+    foreach ($this['items'] ?? [] as $item) {
+        $item = is_array($item) ? $item : $item->toArray();
+        $address = trim($item['url'] ?? '');
+        if (str_starts_with($address, 'october://')) {
+            $link = Cms\Models\PageLookupItem::fromSchema($address);
+            if ($link->type === 'cms-page' && isset($legacyPages[$link->reference])) {
+                $link->url = '/' . $link->reference;
+            }
+            else {
+                if (isset($legacyPages[$link->cmsPage])) {
+                    $link->cms_page = 'tailor/page';
+                }
+                $link->resolveItem();
+            }
+            $address = ($link->url ?? '') . ($link->fragment ? '#' . $link->fragment : '');
+        }
+        $url = parse_url($address);
+        if (isset($url['host']) && $url['host'] === parse_url(Site::getActiveSite()->base_url, PHP_URL_HOST)) {
+            $address = ($url['path'] ?? '/')
+                . (isset($url['query']) ? '?' . $url['query'] : '')
+                . (isset($url['fragment']) ? '#' . $url['fragment'] : '');
+        }
+        $item['url'] = $address;
+        $items[] = $item;
+    }
+    $this['menuItems'] = $items;
+}
+?>
+==
 <ul>
-{% for item in items %}
+{% for item in menuItems %}
     {% set destination = '' %}
     {% set routeName = '' %}
     {% set originalUrl = item.url|default('')|trim %}
-    {% set cleaned = originalUrl|trim('/') %}
+    {% set path = originalUrl|split('#')|first|split('?')|first %}
+    {% set suffix = originalUrl|slice(path|length) %}
+    {% set cleaned = path|trim('/') %}
 
     {% if cleaned starts with 'en/' %}
         {% set cleaned = cleaned|slice(3) %}
     {% endif %}
     {% set parts = cleaned ? cleaned|split('/') : [] %}
     {% set first = parts[0]|default('') %}
-    {% if first == 'about-us' %}
-        {% set first = 'o-nas' %}
-    {% elseif first == 'clients' %}
+    {% if first == 'clients' %}
         {% set first = 'klienci' %}
     {% elseif first == 'service' %}
         {% set first = 'usluga' %}
@@ -20,20 +55,31 @@
         {% set first = 'case' %}
     {% endif %}
 
-    {% if originalUrl == '/' or cleaned == 'en' %}
+    {% set pageSlug = '' %}
+    {% if path == '/' or cleaned == 'en' %}
         {% set routeName = 'home' %}
         {% set destination = routeName|page({}, false) %}
-    {% elseif parts|length == 1 and first in ['blog', 'portfolio', 'o-nas', 'kompetencje', 'klienci', 'kariera', 'kontakt', 'polityka-prywatnosci'] %}
+    {% elseif parts|length == 1 and first in ['blog', 'portfolio', 'klienci'] %}
         {% set routeName = first %}
         {% set destination = routeName|page({}, false) %}
+    {% elseif path starts with '/' and not (path starts with '//') and parts|length == 1 %}
+        {% set routeName = 'tailor/page' %}
+        {% set pageSlug = first %}
+        {% for recordSlug, metadata in contentPages %}
+            {% if metadata.locales.en.url|default('') == '/' ~ first %}
+                {% set pageSlug = recordSlug %}
+            {% endif %}
+        {% endfor %}
+        {% set destination = routeName|page({ slug: contentPagePaths[pageSlug]|default(pageSlug) }, false) %}
     {% elseif parts|length == 2 and first in ['usluga', 'klienci', 'case', 'wpis'] %}
         {% set routeName = first == 'case' ? 'portfolio-item' : first %}
         {% set destination = routeName|page({ slug: parts[1] }, false) %}
     {% elseif originalUrl %}
-        {% set destination = originalUrl|link %}
+        {% set destination = path %}
     {% endif %}
 
-    {% set active = routeName and this.page.id == routeName %}
+    {% set destination = destination ~ suffix %}
+    {% set active = routeName == 'tailor/page' ? pageContent.slug == pageSlug : (routeName and this.page.id == routeName) %}
     <li role="presentation" class="{% if active %}active{% endif %}{% if item.css_class %} {{ item.css_class }}{% endif %}">
         {% if item.is_header or not originalUrl %}
             <span>{{ item.title }}</span>
